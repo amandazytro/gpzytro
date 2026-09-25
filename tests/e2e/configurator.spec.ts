@@ -5,6 +5,7 @@ import {fixtureCatalog} from '../fixtures/catalog';
 const catalog={moodboards:{'1':fixtureCatalog('1'),'2':fixtureCatalog('2'),'3':fixtureCatalog('3')}};
 import {COMPOSITION_REVISION} from '../../src/services/product-options';
 const preview='/plans/floorplan-aligned.svg';
+const batchTasks=[{roomId:'PRISMAL_LOUNGE',roomName:'Copa e convivência',moodboardNumber:'1'},{roomId:'PRISMAL_BOARDROOM',roomName:'Sala de conselho',moodboardNumber:'1'}];
 async function setup(page:Page){
  let direction:any=null,lastSaved:any=null;
  const savedCompositions:Record<string,any>={},renders:Record<string,any>={},requests:any[]=[];
@@ -12,9 +13,10 @@ async function setup(page:Page){
   if(route.request().method()==='GET')return route.fulfill({json:{configured:true,direction,catalog:catalog.moodboards['1'],moodboards:Object.entries(catalog.moodboards).map(([number,value])=>({number,...value}))}});
   const body=route.request().postDataJSON();requests.push(body);
   if(body.applyProjectDirection)direction={prompt:body.prompt,references:body.references,updatedAt:new Date().toISOString()};
-  if(body.scope==='project'){direction={prompt:body.prompt,references:body.references,updatedAt:new Date().toISOString()};return route.fulfill({json:{direction}});}
+  if(body.scope==='project'){direction={prompt:body.prompt,references:body.references,updatedAt:new Date().toISOString()};return route.fulfill({json:{direction,batch:{tasks:batchTasks,skipped:[{name:"MOODBOARD 2",reason:"Referências pendentes"}]}}});}
   const id='12345678-1234-4234-9234-'+String(requests.length).padStart(12,'0');
   const image={id,url:'/api/renders/'+id,createdAt:new Date().toISOString(),compositionRevision:COMPOSITION_REVISION,productIds:body.productIds??[]};renders[id]=image;
+  if(body.saveComposition){lastSaved={roomId:body.roomId,moodboardNumber:body.moodboardNumber,image,savedAt:new Date().toISOString()};savedCompositions[body.roomId]??={};savedCompositions[body.roomId][body.moodboardNumber]=lastSaved;}
   return route.fulfill({json:{image}});
  });
  await page.route('**/api/renders/*',route=>route.fulfill({body:readFileSync('public'+preview),contentType:'image/png'}));
@@ -26,22 +28,40 @@ async function setup(page:Page){
  await page.route('**/api/room-session',route=>{const b=route.request().postDataJSON();const saved=lastSaved?.roomId===b.roomId?lastSaved:null;return route.fulfill({json:{image:saved?.image??{id:'PREVIEW_V1_'+b.roomId,url:preview,createdAt:''},saved,automatic:false}});});
  return requests;
 }
-test('initial prompt generates an image and applies project direction in one request',async({page})=>{
+test('initial prompt generates every room, saves images and restores them on reload',async({page})=>{
  const requests=await setup(page);await page.goto('/');
  await expect(page.getByRole('heading',{name:'O que vamos criar hoje?'})).toBeVisible();
- await expect(page.getByRole('button',{name:'Nova imagem',exact:true})).toBeVisible();
  await page.getByLabel('Seu prompt').fill('Make all images elegant');
  await page.locator('input[type=file]').setInputFiles({name:'premium.png',mimeType:'image/png',buffer:Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAusB9Wl6T9sAAAAASUVORK5CYII=','base64')});
  await page.getByRole('button',{name:'Gerar imagem',exact:true}).click();
- await expect(page.locator('.astra-image-open img')).toHaveCount(1);
- expect(requests).toHaveLength(1);expect(requests[0].applyProjectDirection).toBe(true);
- expect(requests[0].scope).not.toBe('project');expect(requests[0].references).toHaveLength(1);
- await page.getByLabel('Seu prompt').fill('Refine lighting');
- await page.getByRole('button',{name:'Gerar imagem',exact:true}).click();
- await expect(page.locator('.astra-image-open img')).toHaveCount(2);
- expect(requests[1].applyProjectDirection).toBe(false);
- const state=await (await page.request.get('/api/astra')).json();expect(state).toBeTruthy();
- await page.screenshot({path:'test-results/gpzytro-home.png',fullPage:true});
+ await expect(page.locator('.astra-batch')).toContainText('2 de 2 imagens salvas');
+ await expect(page.locator('.astra-batch')).toContainText('Geração finalizada');
+ expect(requests).toHaveLength(3);expect(requests[0].scope).toBe('project');expect(requests[0].references).toHaveLength(1);
+ expect(requests.slice(1).map(r=>r.roomId)).toEqual(batchTasks.map(t=>t.roomId));
+ expect(requests.slice(1).every(r=>r.saveComposition&&r.fullComposition&&r.useBasePreview&&r.prompt==='Make all images elegant')).toBe(true);
+ await page.getByRole('button',{name:/Minhas imagens/}).click();await expect(page.locator('.astra-gallery-grid img')).toHaveCount(2);
+ await page.reload();await page.getByRole('button',{name:/Minhas imagens/}).click();await expect(page.locator('.astra-gallery-grid img')).toHaveCount(2);
+ await page.goto('/?room=PRISMAL_BOARDROOM');await expect(page.getByRole('button',{name:'Composição salva'})).toBeDisabled();expect(requests).toHaveLength(3);
+});
+
+test('batch continues after an image failure and reports its room',async({page})=>{
+ const requests=await setup(page);
+ await page.route('**/api/astra',route=>route.request().method()==='POST'&&route.request().postDataJSON().roomId==='PRISMAL_LOUNGE'?route.fulfill({status:400,json:{error:'Referência ausente'}}):route.fallback());
+ await page.goto('/');await page.getByLabel('Seu prompt').fill('Luz suave');await page.getByLabel('Seu prompt').press('Enter');
+ await expect(page.locator('.astra-batch')).toContainText('1 de 2 imagens salvas · 1 falha(s)');
+ await expect(page.locator('.astra-batch')).toContainText('Referência ausente');
+ expect(requests.at(-1).roomId).toBe('PRISMAL_BOARDROOM');
+});
+
+test('cancel batch stops before the next environment',async({page})=>{
+ await setup(page);let started=0;
+ await page.route('**/api/astra',async route=>{
+  if(route.request().method()==='POST'&&route.request().postDataJSON().roomId){started++;return;}
+  await route.fallback();
+ });
+ await page.goto('/');await page.getByLabel('Seu prompt').fill('Luz suave');await page.getByLabel('Seu prompt').press('Enter');
+ await expect.poll(()=>started).toBe(1);await page.getByRole('button',{name:'Cancelar geração'}).click();
+ await expect(page.locator('.astra-batch')).toContainText('Geração interrompida');expect(started).toBe(1);
 });
 
 test('all three complete moodboards generate, save and restore without reusing old previews',async({page})=>{

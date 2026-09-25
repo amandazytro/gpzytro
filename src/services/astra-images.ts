@@ -11,11 +11,13 @@ import { prismalRooms } from '../data/prismal-rooms';
 import { loungeMoodboards } from '../data/lounge-moodboards';
 import { baseRoomImage, projectRoom, readProjectState, visibleSavedRooms, renderReferencesCurrent, saveProjectDirection } from './project-state';
 export interface AstraInput {
+  saveComposition?:boolean;
   prompt:string; applyProjectDirection?:boolean; fullComposition?:boolean; moodboardNumber?:'1'|'2'|'3'; useBasePreview?:boolean; roomId?:string; sourceMoodboardId?:string; sourceImageId?:string; history?:{prompt:string}[];
   references?:{name:string;dataUrl:string}[]; productIds?:string[];
 }
 export function validateAstraInput(value:unknown):AstraInput {
   const b=value as AstraInput;
+  if(b?.saveComposition!==undefined&&(typeof b.saveComposition!=='boolean'||b.saveComposition&&!b.roomId))throw new RenderError('Informe o ambiente para salvar a composição.');
   if(b?.applyProjectDirection!==undefined&&typeof b.applyProjectDirection!=='boolean')throw new RenderError('Direção visual inválida.');
   if(b?.fullComposition!==undefined&&typeof b.fullComposition!=='boolean')throw new RenderError('Composição inválida.');
   if(!b||typeof b.prompt!=='string'||!b.prompt.trim()||b.prompt.length>6000)throw new RenderError('Escreva um prompt de até 6.000 caracteres.');

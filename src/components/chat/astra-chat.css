@@ -209,3 +209,14 @@
 
 .project-plan-canvas .plan-hit{stroke-width:.8;vector-effect:non-scaling-stroke}.project-plan-canvas .plan-hit:hover,.project-plan-canvas .plan-hit:focus-visible{stroke-opacity:.65}
 .plan-area-mode{display:flex;justify-content:flex-end;margin:8px 0}.plan-area-mode button,.plan-area-editor button,.plan-area-editor select{font:inherit;font-size:13px;padding:9px 12px;background:white;border:1px solid #cdd8cd;border-radius:7px;color:#344435}.plan-area-mode button{cursor:pointer}.plan-area-editor{padding:12px;border:1px solid #cdd8cd;border-radius:10px;background:#f8faf6}.plan-area-toolbar{display:flex;gap:12px;align-items:end;flex-wrap:wrap}.plan-area-toolbar label{font-size:12px;display:flex;flex-direction:column;gap:5px}.plan-area-editor p{font-size:12px;color:#62705d}.plan-area-editor button:disabled{opacity:.45}.plan-area-scroll{overflow:auto;max-height:65vh;background:white;border:1px solid #dde3d8}.plan-area-scroll svg{display:block;min-width:720px;touch-action:none}.plan-area-outline{fill:#77926608;stroke:#74866a;stroke-width:.7;vector-effect:non-scaling-stroke;cursor:pointer}.plan-area-outline.is-selected{fill:#77926620;stroke:#356b43;stroke-width:1}.plan-area-vertex{fill:white;stroke:#356b43;stroke-width:1;vector-effect:non-scaling-stroke;cursor:move;outline:none}.plan-area-vertex.is-selected,.plan-area-vertex:focus-visible{fill:#356b43;stroke:#1f4229}.plan-area-midpoint{fill:#8aa67e;stroke:white;stroke-width:.6;vector-effect:non-scaling-stroke;cursor:copy}.plan-area-midpoint:focus-visible{outline:1px solid #356b43}.plan-area-editor footer{display:flex;justify-content:flex-end;gap:10px;margin-top:12px}.plan-area-editor footer button:last-child{background:#356b43;color:white}.plan-area-mode button:disabled{opacity:.45}
+
+.astra-batch { width:min(730px,calc(100% - 36px)); margin:20px auto; padding:20px; border:1px solid #dbe5df; border-radius:14px; background:#f7faf8; }
+.astra-batch h2 { margin:0 0 12px; font-size:18px; }
+.astra-batch p { font-size:12px; line-height:1.6; }
+.astra-batch progress { width:100%; accent-color:#617c70; }
+.astra-batch ul { padding:0; list-style:none; }
+.astra-batch li { display:flex; flex-wrap:wrap; justify-content:space-between; gap:8px; padding:9px 0; border-top:1px solid #e0e8e3; font-size:12px; }
+.astra-batch button { text-decoration:underline; color:#426550; }
+.astra-batch button:disabled { opacity:.45; cursor:wait; }
+.astra-batch-failure { display:block; width:100%; color:#9b6657; }
+.astra-batch summary { cursor:pointer; font-size:12px; }

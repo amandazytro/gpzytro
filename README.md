@@ -92,3 +92,9 @@ The supplied office floorplan is the default across public and internal entrypoi
 ## Complete decoration compositions
 
 The public room view now selects whole moodboards instead of individual furniture. Lounge (room 21) offers MOODBOARD 1, 2 and 3 beneath the perspective. Each contains artwork, side table, plant, sofa, coffee table, rug and armchair. Selection atomically persists the moodboard ID and its local image snapshot, without calling the API. Three images share the original Lounge viewpoint and architectural background; generated edits are visual approximations, not a pixel-level guarantee. Render overlays, simulation labels and timestamps have been removed as requested. Original item-level domain utilities remain for existing data compatibility, but are not exposed in the public room UI.
+
+## Automatic project generation
+
+Submitting the initial prompt saves the project direction and automatically renders every unlocked room for each available moodboard. Each image uses its room plan and references and is saved as that room's moodboard composition. The page displays progress, skipped rooms/catalogs, and individual errors; a failed room does not stop the remaining images. The existing room prompt still edits only that room.
+
+The browser processes one image request at a time. Keep the page open until completion; canceling, reloading, or switching rooms stops the remaining queue. Completed images remain saved on the server and in the browser gallery. No paid API calls are made until the user submits the prompt.

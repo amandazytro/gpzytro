@@ -13,6 +13,7 @@ import type { SavedRoom, ProjectState, RoomImage } from '../../services/project-
 const PROJECT=prismalDatabase();
 import { ArrowUp, Check, Download, ImagePlus, Images, LoaderCircle, Maximize2, MessageSquare, PanelLeftClose, PanelLeftOpen, Plus, ScanLine, Settings, Square, Table2, Trash2, X } from 'lucide-react';
 import './astra-chat.css';
+import { runProjectBatch, type BatchPlan, type BatchProgress, type BatchResult } from '../../domain/project-batch';
 
 type Turn={id:string;prompt:string;moodboardNumber?:MoodboardNumber;image:{id:string;url:string;createdAt:string;compositionRevision?:string;referenceRevision?:string;productIds?:string[]};referenceNames:string[]};
 type Conversation={id:string;title:string;turns:Turn[];updatedAt:string};
@@ -56,6 +57,9 @@ export function AstraChat(){
   const [error,setError]=useState('');
   const [storageNotice,setStorageNotice]=useState('');
   const [pending,setPending]=useState<{id:string;prompt:string}|null>(null);
+  const [batchProgress,setBatchProgress]=useState<BatchProgress|null>(null);
+  const [batchResults,setBatchResults]=useState<BatchResult[]>([]);
+  const [batchSkipped,setBatchSkipped]=useState<BatchPlan['skipped']>([]);
   const [sidebarOpen,setSidebarOpen]=useState(false);
   const [gallery,setGallery]=useState(false);
   const [productIds,setProductIds]=useState<string[]>([]);
@@ -108,8 +112,8 @@ export function AstraChat(){
   useEffect(()=>{if(textarea.current){textarea.current.style.height='auto';textarea.current.style.height=Math.min(textarea.current.scrollHeight,180)+'px';}},[draft]);
   useEffect(()=>{scrollArea.current?.scrollTo({top:scrollArea.current.scrollHeight,behavior:'smooth'});},[turns.length,pending,activeId]);
   useEffect(()=>{if(zoomImage)zoomDialog.current?.showModal();},[zoomImage]);
-  function cancel(){generation.current++;controller.current?.abort();setPending(null);}
-  function newConversation(){cancel();setComposition('1');setPreviewMoodboard(null);setProductIds([]);router.push('/');setActiveId(null);setDraft('');setReferences([]);setDirectionNotice('');setError('');setGallery(false);setSidebarOpen(false);textarea.current?.focus();}
+  function cancel(){generation.current++;controller.current?.abort();setPending(null);setBatchProgress(p=>p?{...p,current:null}:null);}
+  function newConversation(){cancel();setBatchProgress(null);setBatchResults([]);setBatchSkipped([]);setComposition('1');setPreviewMoodboard(null);setProductIds([]);router.push('/');setActiveId(null);setDraft('');setReferences([]);setDirectionNotice('');setError('');setGallery(false);setSidebarOpen(false);textarea.current?.focus();}
 
   function openConversation(id:string){if(id.startsWith('ROOM_')){openRoom(id.slice(5));return;}cancel();setComposition(conversations.find(c=>c.id===id)?.turns.at(-1)?.moodboardNumber??'1');setProductIds([]);setPreviewMoodboard(null);router.push('/');setActiveId(id);setDraft('');setReferences([]);setError('');setGallery(false);setSidebarOpen(false);}
   function deleteImage(conversationId:string,turnId:string){
@@ -153,12 +157,50 @@ export function AstraChat(){
       void submit(undefined,number);
     }
   }
+  async function generateProject(prompt:string){
+    const requestId=++generation.current;
+    const abort=new AbortController();controller.current=abort;
+    const referenceNames=references.map(r=>r.name);
+    setPending({id:'PROJECT_BATCH',prompt});setError('');setGallery(false);
+    setBatchProgress(null);setBatchResults([]);setBatchSkipped([]);setDirectionNotice('');
+    try{
+      const response=await fetch('/api/astra',{method:'POST',headers:{'Content-Type':'application/json'},signal:abort.signal,body:JSON.stringify({scope:'project',prompt,references})});
+      const data=await response.json();
+      if(!response.ok||!Array.isArray(data.batch?.tasks))throw new Error(data.error??'Não foi possível preparar os ambientes.');
+      if(requestId!==generation.current)return;
+      const plan:BatchPlan=data.batch;
+      setBatchSkipped(plan.skipped);setDraft('');setReferences([]);
+      await runProjectBatch(plan.tasks,abort.signal,async(task,signal)=>{
+        const response=await fetch('/api/astra',{method:'POST',headers:{'Content-Type':'application/json'},signal,body:JSON.stringify({
+          prompt,roomId:task.roomId,moodboardNumber:task.moodboardNumber,
+          fullComposition:true,useBasePreview:true,saveComposition:true,
+        })});
+        const result=await response.json();
+        if(!response.ok||!result?.image?.url)throw new Error(result?.error??'Não foi possível gerar a imagem.');
+        return result.image;
+      },result=>{
+        if(requestId!==generation.current)return;
+        setBatchResults(prev=>[...prev,result]);
+        if(!result.image)return;
+        const image=result.image;
+        const turn:Turn={id:crypto.randomUUID(),prompt,moodboardNumber:result.task.moodboardNumber,image,referenceNames};
+        const id='ROOM_'+result.task.roomId;
+        setConversations(prev=>{
+          const current=prev.find(c=>c.id===id);
+          const updated:Conversation={id,title:result.task.roomName,turns:[...(current?.turns??[]),turn].slice(-40),updatedAt:new Date().toISOString()};
+          return [updated,...prev.filter(c=>c.id!==id)].slice(0,30);
+        });
+      },progress=>{if(requestId===generation.current)setBatchProgress(progress);});
+    }catch(e){if(requestId===generation.current&&!abort.signal.aborted)setError(e instanceof Error?e.message:'Não foi possível gerar o projeto.');}
+    finally{if(requestId===generation.current)setPending(null);}
+  }
   async function submit(event?:FormEvent, automatic?:MoodboardNumber, chosenProducts?:string[]){
     event?.preventDefault();
     const target=automatic??composition;
     const targetCatalog=status?.moodboards?.find(m=>m.number===target)??activeCatalog;
     const prompt=automatic&&targetCatalog.referenceStrategy==='instances'?'Gere uma imagem deste ambiente com todos os móveis vinculados às instâncias atuais da planta. Preserve arquitetura, contornos, posição, orientação, função e equipamentos. Use as imagens e acabamentos de cada referência e somente suas adaptações documentadas. Não acrescente móveis.':automatic?`Troque o estilo de TODAS as peças decorativas existentes na composição do MOODBOARD ${target} para ${currentRoom?.name??'o ambiente da planta'}. Todos os móveis devem permanecer exatamente no mesmo lugar, orientação, quantidade, função e escala da planta; só muda o estilo. Preserve computadores, monitores e demais equipamentos essenciais no lugar, mesmo sem referência na tabela. Aplique materiais e modelos compatíveis da tabela: mesa continua mesa, alterando seu tampo; tapete, piso e poltronas existentes podem receber novas referências sem mudar a distribuição. Reproduza exatamente os modelos especificados na tabela, incluindo sofá e poltrona: forma, cor, material e detalhes, sem adaptações. Somente se o item não tiver produto especificado, crie apenas a forma do modelo, mantendo função, lugar e dimensões e usando obrigatoriamente os acabamentos, cores e materiais aplicáveis do moodboard. Invente um acabamento somente se não existir nenhuma referência aplicável para essa parte. Não acrescente móveis extras. Preserve arquitetura, câmera, iluminação e ambientes vizinhos salvos.`:draft.trim();
     if(!prompt||pending||roomLoading||saving)return;
+    if(globalMode&&!automatic){if(!status?.configured){setError('A API ainda não está configurada no servidor.');return;}await generateProject(prompt);return;}
     if(targetCatalog.status==='pending'){setError('As referências deste moodboard ainda não foram configuradas.');return;}
     if(!status?.configured){setError('A API ainda não está configurada no servidor.');return;}
     const id=roomId?'ROOM_'+roomId:(activeId??crypto.randomUUID()), requestId=++generation.current;
@@ -188,7 +230,7 @@ export function AstraChat(){
       <button type="button" className="astra-icon-button" title="Anexar referência" aria-label="Anexar referência" disabled={saving||!!pending||references.length>=2||(!globalMode&&activeCatalog.status==='ready'&&activeCatalog.referenceStrategy!=='instances')} onClick={()=>fileInput.current?.click()}><Plus size={20}/></button>
       <button type="button" className="astra-reference-chip" onClick={()=>referenceDialog.current?.showModal()}><ScanLine size={14}/><span>Planta Prismal V2</span><Check size={12}/></button>
       {(turns.length>0||roomId)&&<span className="astra-edit-hint">{currentRoom?.name??'Editando a última imagem'}</span>}
-    </div>{pending?<button className="astra-send" type="button" aria-label="Cancelar geração" onClick={cancel}><Square size={13} fill="currentColor"/></button>:<button className="astra-send" type="submit" aria-label="Gerar imagem" disabled={!draft.trim()||!status?.configured||roomLoading||saving||catalogBlocked}><ArrowUp size={20}/></button>}</div>
+    </div>{pending?<button className="astra-send" type="button" aria-label="Cancelar geração" onClick={cancel}><Square size={13} fill="currentColor"/></button>:<button className="astra-send" type="submit" aria-label="Gerar imagem" disabled={!draft.trim()||!status?.configured||roomLoading||saving||(!globalMode&&catalogBlocked)}><ArrowUp size={20}/></button>}</div>
     <input ref={fileInput} type="file" accept="image/png,image/jpeg,image/webp" multiple hidden onChange={e=>void attach(e.target.files)}/>
   </form>;
   function imageView(turn:Turn){return <div className="astra-answer"><div className="astra-image-answer"><button type="button" className="astra-image-open" onClick={()=>setZoomImage(turn.image.url)} aria-label="Ampliar imagem"><img src={turn.image.url} alt={turn.prompt} onLoad={()=>scrollArea.current?.scrollTo({top:scrollArea.current.scrollHeight,behavior:'smooth'})}/></button><div className="astra-image-tools"><a href={turn.image.url} download={'astra-'+turn.image.id+'.png'} aria-label="Baixar imagem" title="Baixar imagem"><Download size={16}/></a><button type="button" aria-label="Ampliar imagem" title="Ampliar imagem" onClick={()=>setZoomImage(turn.image.url)}><Maximize2 size={16}/></button></div></div></div>;}
@@ -206,7 +248,19 @@ export function AstraChat(){
       {currentRoom&&<div className="astra-room-context"><button className="astra-room-context-plan" aria-label="Ver ambiente na planta" onClick={()=>referenceDialog.current?.showModal()}><span aria-hidden="true" inert><Floorplan variant="locator" rooms={PROJECT.rooms} drawing={null} image={PROJECT.referenceDocuments[0]} activeRoomId={roomId} onOpenRoom={r=>openRoom(r.id)}/></span></button><div><span>AMBIENTE {String(roomNumber).padStart(2,'0')}</span><strong>{currentRoom.name}</strong></div><button className="astra-switch-room" onClick={()=>referenceDialog.current?.showModal()}>Trocar ambiente</button></div>}
       {!roomId&&!globalMode&&<div className="astra-global-moodboards" aria-label="Moodboard ativo">{(['1','2','3'] as const).map(n=><button key={n} aria-pressed={composition===n} disabled={!!pending} onClick={()=>selectMoodboard(n)}>MOODBOARD {n}</button>)}{catalogBlocked&&<span>Aguardando tabela do MOODBOARD {composition}</span>}</div>}{storageNotice&&<p className="astra-system-notice" role="status">{storageNotice}</p>}
       <div className="astra-chat-scroll" ref={scrollArea}>
-        {gallery?<section className="astra-gallery"><span className="astra-overline">SEU ESTÚDIO</span><h1>Minhas imagens</h1>{imageCount?<div className="astra-gallery-grid">{conversations.flatMap(c=>c.turns.map(t=><div className="astra-gallery-card" key={t.id}><button className="astra-gallery-open" onClick={()=>openConversation(c.id)}><img src={t.image.url} alt={t.prompt} loading="lazy"/><span>{t.prompt}</span></button><button className="astra-gallery-delete" aria-label={"Excluir imagem: "+t.prompt} onClick={()=>deleteImage(c.id,t.id)}><Trash2 size={14}/>Excluir</button></div>))}</div>:<div className="astra-gallery-empty"><Images size={28}/><p>As imagens que você criar aparecerão aqui.</p><button onClick={newConversation}>Criar minha primeira imagem</button></div>}</section>:!roomId&&!turns.length&&!pending?<section className="astra-welcome"><div className="astra-welcome-heading"><span className="astra-overline">{globalMode?"DIREÇÃO VISUAL DO PROJETO":"CRIAR IMAGEM DO PROJETO"}</span><h1>O que vamos criar hoje?</h1><p>{globalMode?"Descreva a imagem e a direção visual desejadas. Ao enviar, a API gera a imagem e registra essa direção para as próximas criações do projeto.":"Descreva a imagem que deseja gerar. A API usará as plantas, medidas e os móveis vinculados ao projeto."}</p></div>{composer}<div className="astra-suggestions">{(globalMode?suggestions:[{title:'Copa e convivência',prompt:'Gere uma perspectiva da copa e convivência com os móveis vinculados, incluindo o sofá modular em L, preservando a planta.'},{title:'Sala de conselho',prompt:'Gere uma perspectiva da sala de conselho com as referências cadastradas, preservando os lugares da mesa, cadeiras e balcões.'},{title:'Visão geral do projeto',prompt:'Gere uma vista geral do projeto seguindo as plantas, medidas e posições das instâncias.'}]).map(s=><button key={s.title} onClick={()=>{setDraft(s.prompt);textarea.current?.focus();}}><ImagePlus size={16}/><span>{s.title}</span></button>)}</div><p className="astra-catalog-note">{activeCatalog.status==='ready'?'Materiais da tabela, mantendo os móveis e a organização da planta.':'Catálogo de produtos aguardando sua tabela.'}</p></section>:<section className="astra-thread" aria-label="Conversa">{roomId&&!turns.length&&!pending&&(roomLoading?<div className="astra-room-loading" role="status"><LoaderCircle className="astra-spin" size={20}/><span>Preparando {currentRoom?.name}…</span></div>:latestRoomImage?imageView({id:'ROOM_INITIAL',prompt:'Perspectiva de '+currentRoom?.name,image:latestRoomImage,referenceNames:[]}):<div className="astra-gallery-empty"><Images size={28}/><p>Nenhuma imagem gerada para este ambiente.</p><small>As novas plantas e referências orientarão as próximas criações.</small></div>)}{turns.map(turn=><article key={turn.id} className="astra-turn"><div className="astra-user-message"><p>{turn.prompt}</p>{!!turn.referenceNames.length&&<small>{turn.referenceNames.join(' · ')}</small>}</div>{imageView(turn)}</article>)}{pending&&<article className="astra-turn"><div className="astra-user-message"><p>{pending.prompt}</p></div><div className="astra-generation" role="status"><div><div className="astra-generation-lines"><i/><i/><i/></div><p><LoaderCircle size={14} className="astra-spin"/>Criando sua imagem…</p><small>Isso pode levar alguns minutos.</small></div></div></article>}</section>}
+        {!roomId&&batchProgress&&<section className="astra-batch" aria-label="Geração de todos os ambientes">
+          <h2>{pending?.id==='PROJECT_BATCH'?'Gerando todos os ambientes':batchProgress.completed+batchProgress.failed<batchProgress.total?'Geração interrompida':'Geração finalizada'}</h2>
+          <p role="status">{batchProgress.completed} de {batchProgress.total} imagens salvas{batchProgress.failed>0?' · '+batchProgress.failed+' falha(s)':''}</p>
+          <progress aria-label="Progresso da geração" value={batchProgress.completed+batchProgress.failed} max={batchProgress.total}/>
+          {batchProgress.current&&<p>{batchProgress.current.roomName} · MOODBOARD {batchProgress.current.moodboardNumber}</p>}
+          <p>As imagens concluídas ficam salvas em cada ambiente e em Minhas imagens. Sair desta tela interrompe as próximas gerações.</p>
+          {!!batchResults.length&&<ul>{batchResults.map((result)=><li key={result.task.roomId+'_'+result.task.moodboardNumber}>
+            <strong>{result.task.roomName} · MOODBOARD {result.task.moodboardNumber}</strong>
+            {result.error?<span className="astra-batch-failure">{result.error}</span>:<button type="button" disabled={!!pending} onClick={()=>openRoom(result.task.roomId)}>Ver ambiente</button>}
+          </li>)}</ul>}
+          {!!batchSkipped.length&&<details><summary>{batchSkipped.length} itens fora do lote</summary><ul>{batchSkipped.map((item,index)=><li key={index}>{item.name}: {item.reason}</li>)}</ul></details>}
+        </section>}
+        {gallery?<section className="astra-gallery"><span className="astra-overline">SEU ESTÚDIO</span><h1>Minhas imagens</h1>{imageCount?<div className="astra-gallery-grid">{conversations.flatMap(c=>c.turns.map(t=><div className="astra-gallery-card" key={t.id}><button className="astra-gallery-open" onClick={()=>openConversation(c.id)}><img src={t.image.url} alt={t.prompt} loading="lazy"/><span>{t.prompt}</span></button><button className="astra-gallery-delete" aria-label={"Excluir imagem: "+t.prompt} onClick={()=>deleteImage(c.id,t.id)}><Trash2 size={14}/>Excluir</button></div>))}</div>:<div className="astra-gallery-empty"><Images size={28}/><p>As imagens que você criar aparecerão aqui.</p><button onClick={newConversation}>Criar minha primeira imagem</button></div>}</section>:!roomId&&!turns.length&&!pending?<section className="astra-welcome"><div className="astra-welcome-heading"><span className="astra-overline">{globalMode?"DIREÇÃO VISUAL DO PROJETO":"CRIAR IMAGEM DO PROJETO"}</span><h1>O que vamos criar hoje?</h1><p>{globalMode?"Descreva a direção visual desejada. Ao enviar, a API gera e salva uma imagem de cada ambiente liberado, para todos os moodboards disponíveis. Mantenha esta página aberta até concluir.":"Descreva a imagem que deseja gerar. A API usará as plantas, medidas e os móveis vinculados ao projeto."}</p></div>{composer}<div className="astra-suggestions">{(globalMode?suggestions:[{title:'Copa e convivência',prompt:'Gere uma perspectiva da copa e convivência com os móveis vinculados, incluindo o sofá modular em L, preservando a planta.'},{title:'Sala de conselho',prompt:'Gere uma perspectiva da sala de conselho com as referências cadastradas, preservando os lugares da mesa, cadeiras e balcões.'},{title:'Visão geral do projeto',prompt:'Gere uma vista geral do projeto seguindo as plantas, medidas e posições das instâncias.'}]).map(s=><button key={s.title} onClick={()=>{setDraft(s.prompt);textarea.current?.focus();}}><ImagePlus size={16}/><span>{s.title}</span></button>)}</div><p className="astra-catalog-note">{activeCatalog.status==='ready'?'Materiais da tabela, mantendo os móveis e a organização da planta.':'Catálogo de produtos aguardando sua tabela.'}</p></section>:<section className="astra-thread" aria-label="Conversa">{roomId&&!turns.length&&!pending&&(roomLoading?<div className="astra-room-loading" role="status"><LoaderCircle className="astra-spin" size={20}/><span>Preparando {currentRoom?.name}…</span></div>:latestRoomImage?imageView({id:'ROOM_INITIAL',prompt:'Perspectiva de '+currentRoom?.name,image:latestRoomImage,referenceNames:[]}):<div className="astra-gallery-empty"><Images size={28}/><p>Nenhuma imagem gerada para este ambiente.</p><small>As novas plantas e referências orientarão as próximas criações.</small></div>)}{turns.map(turn=><article key={turn.id} className="astra-turn"><div className="astra-user-message"><p>{turn.prompt}</p>{!!turn.referenceNames.length&&<small>{turn.referenceNames.join(' · ')}</small>}</div>{imageView(turn)}</article>)}{pending&&<article className="astra-turn"><div className="astra-user-message"><p>{pending.prompt}</p></div><div className="astra-generation" role="status"><div><div className="astra-generation-lines"><i/><i/><i/></div><p><LoaderCircle size={14} className="astra-spin"/>{pending.id==='PROJECT_BATCH'?'Gerando imagens do projeto…':'Criando sua imagem…'}</p><small>Isso pode levar alguns minutos.</small></div></div></article>}</section>}
       </div>
       {!gallery&&(roomId||turns.length>0||pending)&&<div className="astra-composer-dock">{composer}<p className="astra-composer-note">A planta do projeto é a referência de todas as imagens.</p></div>}
       {directionNotice&&globalMode&&<p className="astra-system-notice" role="status">{directionNotice}</p>}

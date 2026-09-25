@@ -3,6 +3,8 @@ import { validateAstraInput } from '../../../services/astra-images';
 import { NextResponse } from 'next/server';
 import { astraStatus, createAstraImage } from '../../../services/astra-images';
 import { RenderError } from '../../../services/openai-render';
+import { planProjectBatch } from '../../../services/project-batch';
+import { saveRoomComposition } from '../../../services/project-state';
 export const runtime='nodejs';
 export const maxDuration=300;
 let active=false;
@@ -23,11 +25,15 @@ export async function POST(request:Request){
     let body:unknown;try{body=JSON.parse(Buffer.concat(chunks).toString('utf8'));}catch{throw new RenderError('Pedido inválido.');}
     if((body as {scope?:unknown})?.scope==='project'){
       const input=validateAstraInput(body);
+      const batch=await planProjectBatch();
       const state=await saveProjectDirection(input.prompt,input.references??[]);
-      return NextResponse.json({direction:state.direction});
+      return NextResponse.json({direction:state.direction,batch});
     }
     if((body as {scope?:unknown})?.scope!==undefined&&(body as {scope?:unknown}).scope!=='image')throw new RenderError('Escopo inválido.');
-    return NextResponse.json({image:await createAstraImage(body,request.signal)});
+    const input=validateAstraInput(body);
+    const image=await createAstraImage(input,request.signal);
+    if(input.saveComposition&&input.roomId)await saveRoomComposition({roomId:input.roomId,moodboardNumber:input.moodboardNumber??'1',imageId:image.id});
+    return NextResponse.json({image});
   }catch(error){
     const known=error instanceof RenderError;
     return NextResponse.json({error:known?error.message:'Não foi possível concluir a imagem. Tente novamente.'},{status:known?error.status:502});
