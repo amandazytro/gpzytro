@@ -1,0 +1,60 @@
+import {mockCatalogFiles} from './fixtures/catalog';
+mockCatalogFiles();
+import { test } from 'node:test';
+import assert from 'node:assert/strict';
+import { unlink } from 'node:fs/promises';
+import path from 'node:path';
+import { generateRenders, readRender, renderDirectory } from '../src/services/openai-render';
+const brief = { operation: 'base', instructions: 'Render living room', selections: [], documents: [] };
+test('OpenAI render validates, stores images, passes references on edits, and sanitizes provider errors', async () => {
+  const originalFetch = globalThis.fetch;
+  const originalKey = process.env.OPENAI_API_KEY;
+  process.env.OPENAI_API_KEY = 'test-secret';
+  const ids: string[] = [];
+  try {
+    let calls = 0;
+    globalThis.fetch = async (_url, init) => {
+      calls++;
+      const request = JSON.parse(String(init?.body));
+      assert.equal(request.model, 'gpt-6-astra');
+      assert.equal(request.tools[0].type, 'image_generation');
+      assert.ok(request.instructions.includes('walls'));
+      const content=request.input[0].content;
+      const sent=JSON.parse(content[0].text.slice(content[0].text.indexOf('\n')+1));
+      assert.equal(sent.ceilingSpecification.revision,'B');
+      assert.equal(sent.dimensionSpecification.units,'m');
+      assert.equal(sent.dimensionSpecification.declaredTotalAreaM2,243.76);
+      assert.equal(sent.dimensionSpecification.detailImages.length,4);
+      assert.ok(sent.architecture.sourceDocumentIds.includes('PRISMAL_DIMENSIONS'));
+      assert.ok(sent.documents.some((d:any)=>d.image==='/plans/dimensions-original.png'));
+      assert.ok(sent.dimensionSpecification.constraints.some((c:string)=>c.includes('336')));
+      assert.deepEqual(sent.ceilingSpecification.heights.map((h:any)=>h.height),[2300,2400,2500,2650,2525]);
+      assert.equal(sent.ceilingSpecification.raftTile.width,1200);
+      assert.ok(sent.architecture.sourceDocumentIds.includes('PRISMAL_CEILING'));
+      assert.equal(content.filter((c:any)=>c.type==='input_image'&&c.detail==='high').length,7);
+      assert.ok(sent.documents.some((d:any)=>d.image==='/plans/floorplan-reference.png'));
+      assert.ok(sent.documents.some((d:any)=>d.image==='/plans/ceiling-page-1.png'));
+      if (calls === 2) assert.ok(request.input[0].content.some((c: any) => c.type === 'input_image'));
+      return Response.json({output:[{type:'image_generation_call',result:Buffer.from('test-image').toString('base64')}]});
+    };
+    await assert.rejects(generateRenders({brief,count:9}), /variations/);
+    await assert.rejects(generateRenders({brief:{...brief,operation:'edit'}}), /real base render/);
+    await assert.rejects(generateRenders({brief:{...brief,documents:[{image:'/../.env.local'}]}}), /reference path/);
+    assert.equal(calls,0);
+    const [base] = await generateRenders({brief:{...brief,dimensionSpecification:{units:'incorrect'},ceilingSpecification:{revision:'incorrect'}}}); ids.push(base.id);
+    assert.equal(base.isPlaceholder,false);
+    assert.equal((await readRender(base.id)).toString(),'test-image');
+    const [edit] = await generateRenders({brief:{...brief,operation:'edit'},sourceRenderId:base.id,sourceImageUrl:base.imageUrl}); ids.push(edit.id);
+    assert.equal(edit.parentRenderId,base.id);
+    const [variation]=await generateRenders({brief:{...brief,operation:'variation'},sourceRenderId:base.id,sourceImageUrl:base.imageUrl});ids.push(variation.id);
+    assert.equal(variation.parentRenderId,base.id);
+    globalThis.fetch = async () => Response.json({error:{code:'credit_balance_exhausted',message:'test-secret'}},{status:429});
+    await assert.rejects(generateRenders({brief}), /credits are exhausted/);
+    globalThis.fetch = async () => Response.json({output:[]});
+    await assert.rejects(generateRenders({brief}), /no image/);
+  } finally {
+    globalThis.fetch = originalFetch;
+    if (originalKey === undefined) delete process.env.OPENAI_API_KEY; else process.env.OPENAI_API_KEY = originalKey;
+    await Promise.all(ids.flatMap(id=>[unlink(path.join(renderDirectory(),id+'.png')),unlink(path.join(renderDirectory(),id+'.json'))]));
+  }
+});

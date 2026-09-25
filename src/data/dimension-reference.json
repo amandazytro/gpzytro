@@ -1,0 +1,229 @@
+{
+  "source": "MEDIDAS.png",
+  "sourceUrl": "/plans/dimensions-original.png",
+  "sha256": "c6830fd45b9237e47e5ffe30bf0bbf97d60759bcbfd7628cef8bed3bf737939b",
+  "width": 1488,
+  "height": 1057,
+  "units": "m",
+  "status": "user-supplied annotations; not independently surveyed",
+  "outerDimensionLabels": {
+    "horizontal": 24,
+    "vertical": 14
+  },
+  "declaredTotalAreaM2": 243.76,
+  "spaces": [
+    {
+      "sourceLabel": "Open Space",
+      "provisionalRoomId": "PRISMAL_WORK_WEST",
+      "areaM2": 70.56
+    },
+    {
+      "sourceLabel": "Sala de Reunião",
+      "provisionalRoomId": "PRISMAL_BOARDROOM",
+      "areaM2": 18.4
+    },
+    {
+      "sourceLabel": "Reunião 01",
+      "provisionalRoomId": "PRISMAL_HUDDLE_1",
+      "areaM2": 9.24
+    },
+    {
+      "sourceLabel": "Reunião 02",
+      "provisionalRoomId": "PRISMAL_MEETING_1",
+      "areaM2": 10.08
+    },
+    {
+      "sourceLabel": "Copa",
+      "provisionalRoomId": "PRISMAL_EXECUTIVE",
+      "areaM2": 12
+    },
+    {
+      "sourceLabel": "Lounge",
+      "provisionalRoomId": "PRISMAL_LOUNGE",
+      "areaM2": 32
+    },
+    {
+      "sourceLabel": "Hall",
+      "provisionalRoomId": "PRISMAL_RECEPTION",
+      "areaM2": 13.2
+    },
+    {
+      "sourceLabel": "Escada (pavimento)",
+      "provisionalRoomId": "PRISMAL_STAIR_NORTH",
+      "areaM2": 12.6
+    },
+    {
+      "sourceLabel": "Escada (inferior)",
+      "provisionalRoomId": "PRISMAL_STAIR_SOUTH",
+      "areaM2": 10.08
+    },
+    {
+      "sourceLabel": "WC PCD",
+      "provisionalRoomId": "PRISMAL_WC1",
+      "areaM2": 3
+    },
+    {
+      "sourceLabel": "WC",
+      "provisionalRoomId": "PRISMAL_WC2",
+      "areaM2": 4.8
+    },
+    {
+      "sourceLabel": "Depósito",
+      "provisionalRoomId": "PRISMAL_PHONE",
+      "areaM2": 2.4
+    },
+    {
+      "sourceLabel": "Circulação / Paredes",
+      "provisionalRoomId": null,
+      "areaM2": 24.4
+    },
+    {
+      "sourceLabel": "Elevador superior",
+      "provisionalRoomId": "PRISMAL_RECEPTION",
+      "areaM2": 3.24
+    },
+    {
+      "sourceLabel": "Elevador inferior",
+      "provisionalRoomId": "PRISMAL_RECEPTION",
+      "areaM2": 3.24
+    }
+  ],
+  "roomDimensionLabels": [
+    {
+      "roomId": "PRISMAL_BOARDROOM",
+      "dimensions": [
+        4,
+        4.6
+      ]
+    },
+    {
+      "roomId": "PRISMAL_HUDDLE_1",
+      "dimensions": [
+        3.2,
+        2.9
+      ]
+    },
+    {
+      "roomId": "PRISMAL_MEETING_1",
+      "dimensions": [
+        3.2,
+        3.15
+      ]
+    },
+    {
+      "roomId": "PRISMAL_LOUNGE",
+      "dimensions": [
+        6.4,
+        5
+      ]
+    },
+    {
+      "roomId": "PRISMAL_STAIR_NORTH",
+      "dimensions": [
+        4.2,
+        3
+      ]
+    },
+    {
+      "roomId": "PRISMAL_STAIR_SOUTH",
+      "dimensions": [
+        3,
+        3.36
+      ]
+    },
+    {
+      "roomId": "PRISMAL_EXECUTIVE",
+      "dimensions": [
+        3
+      ],
+      "note": "Only vertical 3.00m label transcribed; no width inferred."
+    }
+  ],
+  "furnitureReferenceDimensions": [
+    {
+      "sourceLabel": "Mesa de trabalho (referência)",
+      "dimensions": [
+        1.2,
+        0.8
+      ]
+    },
+    {
+      "sourceLabel": "Mesa de reunião (6 lugares)",
+      "dimensions": [
+        2.4,
+        1.2
+      ]
+    },
+    {
+      "sourceLabel": "Mesa de reunião (8 lugares)",
+      "dimensions": [
+        4,
+        1.2
+      ]
+    },
+    {
+      "sourceLabel": "Mesa de reunião (10 lugares)",
+      "dimensions": [
+        4,
+        1.6
+      ]
+    }
+  ],
+  "constraints": [
+    "All dimensions are in metres, areas in square metres. These are user-provided annotations, not independently verified measurements.",
+    "The source explicitly says measurements may vary slightly with the executive project; furniture, equipment and vegetation are illustrative.",
+    "Do not use source background colors as finish specifications.",
+    "Room IDs are provisional spatial matches only. Source Copa overlaps the current executive office, and Depósito overlaps the current phone booth. Preserve registered functions and furniture; do not rename or repurpose rooms based on these labels.",
+    "Outer labels 24m x 14m yield 336m², differing from the declared 243.76m². Do not force a globally consistent metric model or silently correct either annotation.",
+    "Reunião 01 labels 3.20m x 2.90m yield 9.28m², differing from its listed 9.24m². Preserve both as source annotations.",
+    "Furniture dimensions are generic reference sizes, not verified dimensions of registered products. Do not resize registered products to force these examples.",
+    "Associate every dimension with its drawn endpoints and correct room; do not derive missing lengths from pixels or use area as a linear dimension.",
+    "Ceiling heights come from the ceiling PDF in millimetres. Never treat plan lengths as heights."
+  ],
+  "detailImages": [
+    {
+      "name": "Dimension source crop: upper",
+      "image": "/plans/dimensions-upper.png",
+      "detail": "high",
+      "sourcePixelBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1230,
+        "height": 560
+      }
+    },
+    {
+      "name": "Dimension source crop: lower",
+      "image": "/plans/dimensions-lower.png",
+      "detail": "high",
+      "sourcePixelBounds": {
+        "x": 0,
+        "y": 500,
+        "width": 1230,
+        "height": 430
+      }
+    },
+    {
+      "name": "Dimension source crop: schedule",
+      "image": "/plans/dimensions-schedule.png",
+      "detail": "high",
+      "sourcePixelBounds": {
+        "x": 1230,
+        "y": 40,
+        "width": 258,
+        "height": 720
+      }
+    },
+    {
+      "name": "Dimension source crop: notes",
+      "image": "/plans/dimensions-notes.png",
+      "detail": "high",
+      "sourcePixelBounds": {
+        "x": 0,
+        "y": 930,
+        "width": 1230,
+        "height": 127
+      }
+    }
+  ]
+}

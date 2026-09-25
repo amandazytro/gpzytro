@@ -1,0 +1,26 @@
+{
+  "moodboards": {
+    "1": {
+      "status": "ready",
+      "name": "Referências atuais da planta",
+      "source": "project-local",
+      "referenceStrategy": "instances",
+      "externalDelivery": "authorized",
+      "authorization": "Usuário autorizou explicitamente o envio do catálogo, vínculos e plantas à API da OpenAI nesta conversa.",
+      "products": [],
+      "rules": []
+    },
+    "2": {
+      "status": "pending",
+      "name": "Aguardando novas referências",
+      "rules": [],
+      "products": []
+    },
+    "3": {
+      "status": "pending",
+      "name": "Aguardando novas referências",
+      "rules": [],
+      "products": []
+    }
+  }
+}

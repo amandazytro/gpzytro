@@ -1,0 +1,766 @@
+﻿{
+    "images":  [
+                   {
+                       "target":  "/xl/media/image.png",
+                       "row":  7
+                   },
+                   {
+                       "target":  "/xl/media/image2.png",
+                       "row":  8
+                   },
+                   {
+                       "target":  "/xl/media/image3.png",
+                       "row":  9
+                   },
+                   {
+                       "target":  "/xl/media/image4.png",
+                       "row":  10
+                   },
+                   {
+                       "target":  "/xl/media/image5.png",
+                       "row":  11
+                   },
+                   {
+                       "target":  "/xl/media/image6.png",
+                       "row":  12
+                   },
+                   {
+                       "target":  "/xl/media/image7.png",
+                       "row":  13
+                   },
+                   {
+                       "target":  "/xl/media/image8.png",
+                       "row":  14
+                   },
+                   {
+                       "target":  "/xl/media/image9.png",
+                       "row":  15
+                   },
+                   {
+                       "target":  "/xl/media/image10.png",
+                       "row":  16
+                   },
+                   {
+                       "target":  "/xl/media/image11.png",
+                       "row":  17
+                   },
+                   {
+                       "target":  "/xl/media/image12.png",
+                       "row":  18
+                   },
+                   {
+                       "target":  "/xl/media/image13.png",
+                       "row":  19
+                   },
+                   {
+                       "target":  "/xl/media/image14.png",
+                       "row":  20
+                   },
+                   {
+                       "target":  "/xl/media/image15.png",
+                       "row":  21
+                   },
+                   {
+                       "target":  "/xl/media/image16.png",
+                       "row":  22
+                   },
+                   {
+                       "target":  "/xl/media/image17.png",
+                       "row":  23
+                   },
+                   {
+                       "target":  "/xl/media/image18.png",
+                       "row":  24
+                   },
+                   {
+                       "target":  "/xl/media/image19.png",
+                       "row":  25
+                   },
+                   {
+                       "target":  "/xl/media/image20.png",
+                       "row":  26
+                   },
+                   {
+                       "target":  "/xl/media/image21.png",
+                       "row":  27
+                   },
+                   {
+                       "target":  "/xl/media/image22.png",
+                       "row":  28
+                   },
+                   {
+                       "target":  "/xl/media/image23.png",
+                       "row":  29
+                   },
+                   {
+                       "target":  "/xl/media/image24.png",
+                       "row":  30
+                   },
+                   {
+                       "target":  "/xl/media/image25.png",
+                       "row":  31
+                   },
+                   {
+                       "target":  "/xl/media/image26.png",
+                       "row":  32
+                   },
+                   {
+                       "target":  "/xl/media/image27.png",
+                       "row":  33
+                   },
+                   {
+                       "target":  "/xl/media/image28.png",
+                       "row":  34
+                   },
+                   {
+                       "target":  "/xl/media/image29.png",
+                       "row":  35
+                   },
+                   {
+                       "target":  "/xl/media/image30.png",
+                       "row":  36
+                   },
+                   {
+                       "target":  "/xl/media/image31.png",
+                       "row":  37
+                   },
+                   {
+                       "target":  "/xl/media/image32.png",
+                       "row":  38
+                   },
+                   {
+                       "target":  "/xl/media/image33.png",
+                       "row":  39
+                   },
+                   {
+                       "target":  "/xl/media/image34.png",
+                       "row":  40
+                   },
+                   {
+                       "target":  "/xl/media/image35.png",
+                       "row":  41
+                   },
+                   {
+                       "target":  "/xl/media/image36.png",
+                       "row":  42
+                   },
+                   {
+                       "target":  "/xl/media/image37.png",
+                       "row":  43
+                   },
+                   {
+                       "target":  "/xl/media/image38.png",
+                       "row":  44
+                   }
+               ],
+    "rows":  [
+                 {
+                     "cells":  {
+                                   "E":  "Accessible WC; lift lobby",
+                                   "D":  "Tile",
+                                   "G":  "Vale Surfaces",
+                                   "F":  "Ivory stone-effect tile",
+                                   "B":  "FL-01",
+                                   "I":  "m²",
+                                   "K":  "Tiled Flooring",
+                                   "H":  "68",
+                                   "C":  "Floor tile 1",
+                                   "J":  "Image 1",
+                                   "L":  "Same-looking swatch appears in WC and lift lobby."
+                               },
+                     "row":  7
+                 },
+                 {
+                     "cells":  {
+                                   "E":  "Reception welcome area",
+                                   "D":  "Tile",
+                                   "G":  "Vale Surfaces",
+                                   "F":  "Small ivory tile",
+                                   "B":  "FL-02",
+                                   "I":  "m²",
+                                   "K":  "Smal Tiled Flooring",
+                                   "H":  "95",
+                                   "C":  "Floor tile 2",
+                                   "J":  "Image 1",
+                                   "L":  "Tile size and layout are unconfirmed."
+                               },
+                     "row":  8
+                 },
+                 {
+                     "cells":  {
+                                   "E":  "Reception welcome area",
+                                   "D":  "Microcement",
+                                   "G":  "Forma Mineral",
+                                   "F":  "Warm beige microcement",
+                                   "B":  "FL-03",
+                                   "I":  "m²",
+                                   "K":  "Mirco Cement Flooring",
+                                   "H":  "85",
+                                   "C":  "Microcement floor 1",
+                                   "J":  "Image 1",
+                                   "L":  "Finish appearance only."
+                               },
+                     "row":  9
+                 },
+                 {
+                     "cells":  {
+                                   "E":  "Staircase to below",
+                                   "D":  "Wood",
+                                   "G":  "Alder \u0026 Grain",
+                                   "F":  "Medium brown timber tread finish",
+                                   "B":  "WD-01",
+                                   "I":  "m²",
+                                   "K":  "Tread Finish",
+                                   "H":  "145",
+                                   "C":  "Wood floor 1 — stair tread",
+                                   "J":  "Image 1",
+                                   "L":  "Species and construction unconfirmed."
+                               },
+                     "row":  10
+                 },
+                 {
+                     "cells":  {
+                                   "E":  "Staircase to below",
+                                   "D":  "Metal",
+                                   "G":  "Foundry Detail",
+                                   "F":  "Brass-tone anti-slip strip",
+                                   "B":  "MT-01",
+                                   "I":  "linear m",
+                                   "K":  "Stair Grip",
+                                   "H":  "38",
+                                   "C":  "Stair grip 1",
+                                   "J":  "Image 1",
+                                   "L":  "Metal alloy and profile unconfirmed."
+                               },
+                     "row":  11
+                 },
+                 {
+                     "cells":  {
+                                   "E":  "Accessible WC",
+                                   "D":  "Tile",
+                                   "G":  "Vale Surfaces",
+                                   "F":  "Cream travertine-look wall tile",
+                                   "B":  "TL-01",
+                                   "I":  "m²",
+                                   "K":  "Wall Tile",
+                                   "H":  "82",
+                                   "C":  "Wall tile 1",
+                                   "J":  "Image 2",
+                                   "L":  "Natural stone versus porcelain unconfirmed."
+                               },
+                     "row":  12
+                 },
+                 {
+                     "cells":  {
+                                   "E":  "Reception welcome area; lift lobby",
+                                   "D":  "Wood",
+                                   "G":  "Alder \u0026 Grain",
+                                   "F":  "Medium brown timber wall panel",
+                                   "B":  "WD-02",
+                                   "I":  "m²",
+                                   "K":  "Wall Panels; Timber Panelling",
+                                   "H":  "125",
+                                   "C":  "Wood wall panel 1",
+                                   "J":  "Image 2",
+                                   "L":  "Repeated wood swatches grouped as one option."
+                               },
+                     "row":  13
+                 },
+                 {
+                     "cells":  {
+                                   "E":  "Lift lobby",
+                                   "D":  "Metal",
+                                   "G":  "Foundry Detail",
+                                   "F":  "Brushed bronze-tone detailing",
+                                   "B":  "MT-02",
+                                   "I":  "m²",
+                                   "K":  "Bronze Detailing",
+                                   "H":  "210",
+                                   "C":  "Bronze wall detail 1",
+                                   "J":  "Image 2",
+                                   "L":  "Solid bronze versus coated finish unconfirmed."
+                               },
+                     "row":  14
+                 },
+                 {
+                     "cells":  {
+                                   "E":  "Reception welcome area",
+                                   "D":  "Metal",
+                                   "G":  "Mesh Atelier",
+                                   "F":  "Bronze-tone mesh curtain",
+                                   "B":  "MT-03",
+                                   "I":  "m²",
+                                   "K":  "Metal Curtain",
+                                   "H":  "175",
+                                   "C":  "Metal curtain 1",
+                                   "J":  "Image 2",
+                                   "L":  "Reference photo; mesh construction unconfirmed."
+                               },
+                     "row":  15
+                 },
+                 {
+                     "cells":  {
+                                   "E":  "Staircase to below",
+                                   "D":  "Plaster",
+                                   "G":  "Forma Mineral",
+                                   "F":  "Warm grey-beige textured finish",
+                                   "B":  "WF-01",
+                                   "I":  "m²",
+                                   "K":  "Wall Finish",
+                                   "H":  "55",
+                                   "C":  "Wall finish 1",
+                                   "J":  "Image 2",
+                                   "L":  "Texture sampled from room photograph."
+                               },
+                     "row":  16
+                 },
+                 {
+                     "cells":  {
+                                   "E":  "Accessible WC",
+                                   "D":  "Paint",
+                                   "G":  "Pale Studio",
+                                   "F":  "Warm off-white ceiling paint",
+                                   "B":  "CL-01",
+                                   "I":  "litre",
+                                   "K":  "Ceiling Paint",
+                                   "H":  "28",
+                                   "C":  "Ceiling paint 1",
+                                   "J":  "Image 3",
+                                   "L":  "Pack size and coverage unconfirmed."
+                               },
+                     "row":  17
+                 },
+                 {
+                     "cells":  {
+                                   "E":  "Reception welcome area",
+                                   "D":  "Ceiling",
+                                   "G":  "Pale Studio",
+                                   "F":  "Warm cream ceiling infill",
+                                   "B":  "CL-02",
+                                   "I":  "m²",
+                                   "K":  "Ceiling Finish",
+                                   "H":  "42",
+                                   "C":  "Ceiling finish 1",
+                                   "J":  "Image 3",
+                                   "L":  "Ceiling material unconfirmed."
+                               },
+                     "row":  18
+                 },
+                 {
+                     "cells":  {
+                                   "E":  "Reception welcome area",
+                                   "D":  "Wood",
+                                   "G":  "Alder \u0026 Grain",
+                                   "F":  "Dark timber lattice ceiling",
+                                   "B":  "WD-03",
+                                   "I":  "m²",
+                                   "K":  "Grid Ceiling",
+                                   "H":  "230",
+                                   "C":  "Wood ceiling grid 1",
+                                   "J":  "Image 3",
+                                   "L":  "Timber appearance; construction unconfirmed."
+                               },
+                     "row":  19
+                 },
+                 {
+                     "cells":  {
+                                   "E":  "Lift lobby",
+                                   "D":  "Metal",
+                                   "G":  "Foundry Detail",
+                                   "F":  "Brushed bronze-tone ceiling panel",
+                                   "B":  "MT-04",
+                                   "I":  "m²",
+                                   "K":  "Bronze Panel",
+                                   "H":  "195",
+                                   "C":  "Bronze ceiling panel 1",
+                                   "J":  "Image 3",
+                                   "L":  "Kept separate from wall detailing by application."
+                               },
+                     "row":  20
+                 },
+                 {
+                     "cells":  {
+                                   "E":  "Accessible WC",
+                                   "D":  "Lighting",
+                                   "G":  "Lumen House",
+                                   "F":  "Square flush ceiling light",
+                                   "B":  "LT-01",
+                                   "I":  "item",
+                                   "K":  "Inspo Image — Accessible WC",
+                                   "H":  "95",
+                                   "C":  "Ceiling light 1",
+                                   "J":  "Image 3",
+                                   "L":  "Visible in inspiration photo; not a specified product."
+                               },
+                     "row":  21
+                 },
+                 {
+                     "cells":  {
+                                   "E":  "Staircase to below",
+                                   "D":  "Lighting",
+                                   "G":  "Lumen House",
+                                   "F":  "Compact dark wall light",
+                                   "B":  "LT-02",
+                                   "I":  "item",
+                                   "K":  "Inspo Image — staircase",
+                                   "H":  "120",
+                                   "C":  "Wall light 1",
+                                   "J":  "Image 2",
+                                   "L":  "Small source detail; shape and specification unconfirmed."
+                               },
+                     "row":  22
+                 },
+                 {
+                     "cells":  {
+                                   "E":  "Lift lobby",
+                                   "D":  "Lighting",
+                                   "G":  "Lumen House",
+                                   "F":  "Recessed perimeter LED light",
+                                   "B":  "LT-03",
+                                   "I":  "linear m",
+                                   "K":  "Inspo Image — lift lobby",
+                                   "H":  "48",
+                                   "C":  "Linear light 1",
+                                   "J":  "Image 3",
+                                   "L":  "Visible in inspiration photo; driver and installation excluded."
+                               },
+                     "row":  23
+                 },
+                 {
+                     "cells":  {
+                                   "E":  "Staircase to below",
+                                   "D":  "Metal",
+                                   "G":  "Foundry Detail",
+                                   "F":  "Black vertical metal balustrade",
+                                   "B":  "MT-05",
+                                   "I":  "linear m",
+                                   "K":  "Inspo Image — staircase",
+                                   "H":  "320",
+                                   "C":  "Stair railing 1",
+                                   "J":  "Image 1",
+                                   "L":  "Inspiration detail; dimensions and metal unconfirmed."
+                               },
+                     "row":  24
+                 },
+                 {
+                     "cells":  {
+                                   "E":  "Reception / workspace (proposed)",
+                                   "D":  "Furniture",
+                                   "G":  "Herman Miller",
+                                   "F":  "Graphite mesh task chair with pictured headrest",
+                                   "B":  "FN-01",
+                                   "I":  "item",
+                                   "K":  "Aeron (user identification)",
+                                   "H":  "1650",
+                                   "C":  "Office chair 1 — Aeron",
+                                   "J":  "Image 4",
+                                   "L":  "Assumed chair price. Headrest inclusion and supplier specification to confirm."
+                               },
+                     "row":  25
+                 },
+                 {
+                     "cells":  {
+                                   "E":  "Reception lounge (proposed)",
+                                   "D":  "Furniture",
+                                   "G":  "Flexform",
+                                   "F":  "Light upholstered sectional with chaise",
+                                   "B":  "FN-02",
+                                   "I":  "configuration",
+                                   "K":  "WING (user identification)",
+                                   "H":  "18000",
+                                   "C":  "Sofa 1 — WING",
+                                   "J":  "Image 5",
+                                   "L":  "Assumed price for pictured configuration. Dimensions and upholstery to confirm."
+                               },
+                     "row":  26
+                 },
+                 {
+                     "cells":  {
+                                   "E":  "Reception lounge (proposed)",
+                                   "D":  "Furniture",
+                                   "G":  "Flexform",
+                                   "F":  "Grey upholstered straight sofa",
+                                   "B":  "FN-03",
+                                   "I":  "item",
+                                   "K":  "ROMEO (user identification)",
+                                   "H":  "11500",
+                                   "C":  "Sofa 2 — ROMEO",
+                                   "J":  "Image 6",
+                                   "L":  "Assumed sofa price. Size and upholstery to confirm. Table and throw excluded."
+                               },
+                     "row":  27
+                 },
+                 {
+                     "cells":  {
+                                   "E":  "Reception (alternative)",
+                                   "D":  "Ceiling",
+                                   "G":  "Bespoke / supplier TBC",
+                                   "F":  "Dark exposed soffit, visible services and suspended lighting",
+                                   "B":  "CL-03",
+                                   "I":  "m²",
+                                   "K":  "Exposed ceiling design reference",
+                                   "H":  "95",
+                                   "C":  "Ceiling option 1 — exposed",
+                                   "J":  "Image 7",
+                                   "L":  "Assumed materials allowance for dark finish and suspended lighting. Existing services retained; alterations excluded."
+                               },
+                     "row":  28
+                 },
+                 {
+                     "cells":  {
+                                   "E":  "Reception (alternative)",
+                                   "D":  "Ceiling",
+                                   "G":  "Bespoke / supplier TBC",
+                                   "F":  "Smooth closed ceiling with spots and recessed LED strips",
+                                   "B":  "CL-04",
+                                   "I":  "m²",
+                                   "K":  "Closed ceiling with spots and LED strips",
+                                   "H":  "145",
+                                   "C":  "Ceiling option 2 — closed",
+                                   "J":  "Image 8",
+                                   "L":  "Assumed materials allowance for ceiling, paint, spots, strips and drivers. Lighting density to confirm."
+                               },
+                     "row":  29
+                 },
+                 {
+                     "cells":  {
+                                   "E":  "Reception lounge (proposed)",
+                                   "D":  "Rug",
+                                   "G":  "London Rug Company",
+                                   "F":  "Grey and ivory abstract rug with dark border",
+                                   "B":  "RG-01",
+                                   "I":  "item",
+                                   "K":  "Rug 01",
+                                   "H":  "3000",
+                                   "C":  "Rug 01",
+                                   "J":  "Image 9",
+                                   "L":  "User price. Model, size and fibre composition to confirm."
+                               },
+                     "row":  30
+                 },
+                 {
+                     "cells":  {
+                                   "E":  "Reception lounge (proposed)",
+                                   "D":  "Rug",
+                                   "G":  "Secret Sofa",
+                                   "F":  "Cream rug with raised curved linear pattern",
+                                   "B":  "RG-02",
+                                   "I":  "item",
+                                   "K":  "Rug 02",
+                                   "H":  "2770",
+                                   "C":  "Rug 02",
+                                   "J":  "Image 10",
+                                   "L":  "User price. Model, size and fibre composition to confirm. Latest user photo."
+                               },
+                     "row":  31
+                 },
+                 {
+                     "cells":  {
+                                   "E":  "Reception lounge (proposed)",
+                                   "D":  "Rug",
+                                   "G":  "The Brick",
+                                   "F":  "Beige and ivory patterned rug with central medallion",
+                                   "B":  "RG-03",
+                                   "I":  "item",
+                                   "K":  "Rug 03",
+                                   "H":  "2990",
+                                   "C":  "Rug 03",
+                                   "J":  "Image 11",
+                                   "L":  "User price. Model, size and fibre composition to confirm. Image assignment inferred from order."
+                               },
+                     "row":  32
+                 },
+                 {
+                     "cells":  {
+                                   "E":  "Reception / workspace (proposed)",
+                                   "D":  "Furniture",
+                                   "G":  "Herman Miller",
+                                   "F":  "Black open-lattice back, upholstered seat and castor base",
+                                   "B":  "FN-04",
+                                   "I":  "item",
+                                   "K":  "Sayl",
+                                   "H":  "1182",
+                                   "C":  "Office chair 2 — Sayl",
+                                   "J":  "Image 12",
+                                   "L":  "User price. Exact adjustment options and finish codes to confirm."
+                               },
+                     "row":  33
+                 },
+                 {
+                     "cells":  {
+                                   "E":  "Reception / workspace (proposed)",
+                                   "D":  "Furniture",
+                                   "G":  "Herman Miller",
+                                   "F":  "Burgundy back and seat with pale frame and castor base",
+                                   "B":  "FN-05",
+                                   "I":  "item",
+                                   "K":  "Mirra 2",
+                                   "H":  "1512",
+                                   "C":  "Office chair 3 — Mirra 2",
+                                   "J":  "Image 13",
+                                   "L":  "User price. Back type, adjustment options and finish codes to confirm."
+                               },
+                     "row":  34
+                 },
+                 {
+                     "cells":  {
+                                   "E":  "Reception lounge (proposed)",
+                                   "D":  "Furniture",
+                                   "G":  "Calligaris",
+                                   "F":  "Rust-brown upholstered modular sofa with chaise",
+                                   "B":  "FN-06",
+                                   "I":  "configuration",
+                                   "K":  "NOEMI",
+                                   "H":  "12000",
+                                   "C":  "Sofa 3 — NOEMI",
+                                   "J":  "Image 14",
+                                   "L":  "User price. Modular sofa. Dimensions, modules and upholstery to confirm."
+                               },
+                     "row":  35
+                 },
+                 {
+                     "cells":  {
+                                   "E":  "Reception lounge (proposed)",
+                                   "D":  "Furniture",
+                                   "G":  "Molteni \u0026 C.",
+                                   "F":  "Mustard upholstery with dark leather frame and base",
+                                   "B":  "FN-07",
+                                   "I":  "item",
+                                   "K":  "CORSETTO",
+                                   "H":  "6423",
+                                   "C":  "Armchair 1 — CORSETTO",
+                                   "J":  "Image 15",
+                                   "L":  "User price. Leather-covered base. Upholstery and leather finish to confirm."
+                               },
+                     "row":  36
+                 },
+                 {
+                     "cells":  {
+                                   "E":  "Reception lounge (proposed)",
+                                   "D":  "Furniture",
+                                   "G":  "Ligne Roset",
+                                   "F":  "Cream modular sofa with rounded forms and loose cushions",
+                                   "B":  "FN-08",
+                                   "I":  "configuration",
+                                   "K":  "ANJA",
+                                   "H":  "13120",
+                                   "C":  "Sofa 4 — ANJA",
+                                   "J":  "Image 16",
+                                   "L":  "User price. Modules, upholstery and inclusion of pictured ottoman/cushions to confirm."
+                               },
+                     "row":  37
+                 },
+                 {
+                     "cells":  {
+                                   "E":  "Reception lounge (proposed)",
+                                   "D":  "Furniture",
+                                   "G":  "FIAM Italia",
+                                   "F":  "Light textured upholstery over a curved clear-glass base",
+                                   "B":  "FN-09",
+                                   "I":  "item",
+                                   "K":  "ONAIR",
+                                   "H":  "4999",
+                                   "C":  "Armchair 2 — ONAIR",
+                                   "J":  "Image 17",
+                                   "L":  "User price. 10 mm curved-glass base. Upholstery and feet finish to confirm."
+                               },
+                     "row":  38
+                 },
+                 {
+                     "cells":  {
+                                   "E":  "Floor; location TBC",
+                                   "D":  "Wood",
+                                   "G":  "Supplier TBC",
+                                   "F":  "Warm honey-brown boards with visible grain and knots",
+                                   "B":  "WD-04",
+                                   "I":  "m²",
+                                   "K":  "Cedar wood floor",
+                                   "H":  "118",
+                                   "C":  "Cedar wood floor",
+                                   "J":  "Image 18",
+                                   "L":  "Testing estimate: £100/m² × 1.18 EUR/GBP. Supply only, ex VAT/delivery/fitting. Cedar timber proxy; flooring grade and construction TBC."
+                               },
+                     "row":  39
+                 },
+                 {
+                     "cells":  {
+                                   "E":  "Application / location TBC",
+                                   "D":  "Wood",
+                                   "G":  "Supplier TBC",
+                                   "F":  "Pale beige wood veneer with linear grain",
+                                   "B":  "WD-05",
+                                   "I":  "m²",
+                                   "K":  "White oak veneer",
+                                   "H":  "47.2",
+                                   "C":  "White oak veneer",
+                                   "J":  "Image 19",
+                                   "L":  "Testing estimate: £40/m² × 1.18 EUR/GBP. Supply only, ex VAT/delivery/fitting. Veneer sheet only; backing panel excluded."
+                               },
+                     "row":  40
+                 },
+                 {
+                     "cells":  {
+                                   "E":  "Floor; location TBC",
+                                   "D":  "Wood",
+                                   "G":  "Supplier TBC",
+                                   "F":  "Dark reddish-brown narrow planks with pronounced joints",
+                                   "B":  "WD-06",
+                                   "I":  "m²",
+                                   "K":  "Plank floor",
+                                   "H":  "76.7",
+                                   "C":  "Plank floor",
+                                   "J":  "Image 20",
+                                   "L":  "Testing estimate: £65/m² × 1.18 EUR/GBP. Supply only, ex VAT/delivery/fitting. Engineered timber allowance; species and board size TBC."
+                               },
+                     "row":  41
+                 },
+                 {
+                     "cells":  {
+                                   "E":  "Wall; location TBC",
+                                   "D":  "Plaster",
+                                   "G":  "Supplier TBC",
+                                   "F":  "Off-white fine granular textured finish",
+                                   "B":  "WF-02",
+                                   "I":  "m²",
+                                   "K":  "White stucco",
+                                   "H":  "23.6",
+                                   "C":  "White stucco",
+                                   "J":  "Image 21",
+                                   "L":  "Testing estimate: £20/m² × 1.18 EUR/GBP. Supply only, ex VAT/delivery/fitting. Decorative stucco materials allowance on prepared substrate."
+                               },
+                     "row":  42
+                 },
+                 {
+                     "cells":  {
+                                   "E":  "Wall; location TBC",
+                                   "D":  "Plaster",
+                                   "G":  "Supplier TBC",
+                                   "F":  "Warm grey-beige mottled plaster with trowelled texture",
+                                   "B":  "WF-03",
+                                   "I":  "m²",
+                                   "K":  "Plastered wall",
+                                   "H":  "9.44",
+                                   "C":  "Plastered wall",
+                                   "J":  "Image 22",
+                                   "L":  "Testing estimate: £8/m² × 1.18 EUR/GBP. Supply only, ex VAT/delivery/fitting. Standard plaster materials allowance; boards and paint excluded."
+                               },
+                     "row":  43
+                 },
+                 {
+                     "cells":  {
+                                   "E":  "Wall; location TBC",
+                                   "D":  "Concrete",
+                                   "G":  "Supplier TBC",
+                                   "F":  "Grey rough concrete with ridges, pits and board-like impressions",
+                                   "B":  "WF-04",
+                                   "I":  "m²",
+                                   "K":  "Rough concrete wall",
+                                   "H":  "41.3",
+                                   "C":  "Rough concrete wall",
+                                   "J":  "Image 23",
+                                   "L":  "Testing estimate: £35/m² × 1.18 EUR/GBP. Supply only, ex VAT/delivery/fitting. Decorative concrete-effect finish; structural concrete excluded."
+                               },
+                     "row":  44
+                 }
+             ]
+}

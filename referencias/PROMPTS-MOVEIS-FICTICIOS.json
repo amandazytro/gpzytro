@@ -1,0 +1,23 @@
+{
+  "tool": "image_gen built-in",
+  "references": [],
+  "prompts": [
+    [
+      "counter",
+      "Use case: product-mockup. Asset type: catalog concept image for an original fictional furniture model named Bancada Dobra. Create from scratch, no brand or existing furniture reference. Subject: one L-shaped office kitchenette base cabinet assembly, long rear run with shorter right-hand return, ivory mineral solid-surface countertop with softly rounded external corner, warm pale ash wood flat-front base cabinets, thin dark recessed finger pulls, graphite recessed plinth. One small undermount stainless sink with black tap near the far end of the long run. No appliances or overhead cabinets. Pure white seamless studio background, soft contact shadow, three-quarter elevated view from open inside of L showing both inside cabinet fronts and continuous counter surface. Refined photorealistic product visualization, whole assembly framed with ample margin, square image. No text, no labels, no logos, no room, no people. This is a fictional design concept, not a photograph of a real product."
+    ],
+    [
+      "chair",
+      "Use case: product-mockup. Asset type: catalog concept image for an original fictional compact armchair named Poltrona Nexo. Design from scratch without any existing product reference. One compact lounge armchair, distinctive separate rounded-rectangle back cushion suspended inside a thin dark graphite bent-metal frame, narrow upholstered arm pads, generous single seat cushion with softened square corners, four short slim black legs. Muted warm olive-gray woven upholstery with fine visible weave. Light and compact proportions for a small office conversation corner. Pure white seamless studio background, soft contact shadow, three-quarter front view, photorealistic high quality product visualization, full chair visible with ample margin, square image. No text, logos, brands, people, other furniture or room. Fictional original design."
+    ],
+    [
+      "sofa",
+      "Use case: product-mockup. Asset type: catalog reference for a fictional modular sofa named Sofa Elo. Design an original sofa from scratch, no reference images, no existing brands. One coherent L-shaped sofa assembly of five compact modular units: three straight seat modules along the long run, one square corner seat module, one straight seat module forming the short right return. Warm light stone-gray woven upholstery, low softly squared back cushions, clean horizontal seat seams distinctly separating modules, subtle graphite recessed plinth, one low upholstered end arm at each exposed end. The inside of the L is open; no chaise, no table, no ottoman. Refined photorealistic studio product visualization against seamless white background, elevated three-quarter view from inside the L clearly showing both runs and all five modules, full sofa visible with margin. No room, text, logos or people. Fictional conceptual product, not a replica of a commercial sofa."
+    ],
+    [
+      "support",
+      "Use case: product-mockup. Asset type: furniture catalog concept for original fictional sideboard named Balcao Trama. Design from scratch, no references, existing products or brands. One low rectangular office support cabinet, long horizontal proportions, slim natural pale ash wood top with small rounded corners, warm ivory matte flat front of three equal flush cabinet doors with slim vertical graphite recessed pulls, pale ash side panels, short slender graphite legs with an understated cross rail. Clean practical storage for meeting-room materials, refined and distinct silhouette. No sink, no planter, no decoration, no handles protruding, no text or logos. Photorealistic studio product visualization, three-quarter front view, entire cabinet and all legs visible, pure white seamless background with soft contact shadow and ample margin. One cabinet only. Fictional original design with no purported manufacturer."
+    ]
+  ],
+  "sofaReview": "Resultado adotado com quatro módulos visíveis: dois retos no trecho longo, canto e retorno. Especificação local ajustada à imagem."
+}

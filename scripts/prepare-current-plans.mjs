@@ -1,0 +1,17 @@
+﻿import fs from 'node:fs';
+import sharp from 'sharp';
+import {createHash} from 'node:crypto';
+const source=fs.readFileSync('src/PLANTAS/PLANTA BAIXA.svg','utf8');
+if(/<script|<foreignObject|(?:href|xlink:href)\s*=\s*["'](?:https?:|javascript:)/i.test(source))throw Error('Unsupported active SVG');
+fs.copyFileSync('src/PLANTAS/PLANTA BAIXA.svg','public/plans/floorplan-source.svg');
+const body=source.slice(source.indexOf('>',source.indexOf('<svg'))+1,source.lastIndexOf('</svg>'));
+const aligned='<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 882 580"><rect width="882" height="580" fill="white"/><g transform="translate(40.5 4.6) scale(0.636 0.598) translate(1256.64 0) rotate(90)">'+body+'</g></svg>';
+fs.writeFileSync('public/plans/floorplan-aligned.svg',aligned);
+await sharp(Buffer.from(aligned)).resize({width:2646}).png().toFile('public/plans/floorplan-reference.png');
+const pdfName=fs.readdirSync('src/PLANTAS').find(n=>n.endsWith('.pdf'));
+fs.copyFileSync('src/PLANTAS/'+pdfName,'public/plans/ceiling-source.pdf');
+const extracted=JSON.parse(fs.readFileSync('public/plans/ceiling-extracted.json'));
+const metadata=await sharp('public/plans/ceiling-page-1.png').metadata();
+const ceiling={source:pdfName,sourceUrl:'/plans/ceiling-source.pdf',sha256:createHash('sha256').update(fs.readFileSync('src/PLANTAS/'+pdfName)).digest('hex'),drawing:'2015-171_272',revision:'B',revisionDate:'2016-07-06',page:1,units:'mm',heights:[{type:'Common area, MF plasterboard',height:2300,color:'green'},{type:'Plasterboard bulkhead',height:2400,color:'red'},{type:'Ceiling rafts',height:2500,color:'orange'},{type:'Service enclosure Type 1',height:2650,color:'teal'},{type:'Service enclosure Type 2',height:2525,color:'blue'}],raftTile:{manufacturer:'SAS',width:1200,height:300},lighting:['Strip light flush with finished face of ceiling raft, to M&E specification','Recessed framed LED angled lighting, to M&E specification'],ventilation:'Linear diffuser to M&E specification',raftTypes:['E1','E2','F1','A','G'],missingDetails:'Raft details refer to drawings 361–367; M&E specifications are not supplied.',constraints:['Use figured dimensions only; do not derive real dimensions from image scale.','Dimensions marked # are approximate.','Match ceiling zones by walls, stairs, lifts and WC cores, not raw floorplan pixel coordinates.','Color indicates height zones, not paint or finish.','Do not assign a height to a room without matching its ceiling zone.','Floorplan instance positions remain provisional visual inference.'],text:extracted.pages.map(p=>({page:p.page,items:p.items.filter(i=>i.text.trim()).map(i=>({text:i.text,pdfTransform:i.transform}))})),preview:{width:metadata.width,height:metadata.height}};
+fs.writeFileSync('src/data/ceiling-reference.json',JSON.stringify(ceiling,null,2));
+console.log({ceiling:metadata.width+'x'+metadata.height});

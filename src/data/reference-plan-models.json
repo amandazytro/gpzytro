@@ -1,0 +1,101 @@
+[
+  {
+    "id": "ARM-CAP-01",
+    "name": "Armário deslizante com jardineiras",
+    "kind": "counter",
+    "category": "Mobiliário",
+    "image": "/catalog/captures-2026-09-24/150038.png",
+    "finish": "Carvalho branqueado; portas e puxadores brancos. Jardineiras superiores no mesmo carvalho.",
+    "confidence": "média",
+    "reason": "Referência identificada na captura enviada; posicionamento adaptado ao contorno atual.",
+    "comparison": "shape"
+  },
+  {
+    "id": "CAD-CAP-01",
+    "name": "Cadeira giratória Tonal",
+    "kind": "chair",
+    "category": "Mobiliário",
+    "image": "/catalog/captures-2026-09-24/150042.png",
+    "finish": "Gabriel Tonal 2490-61317 conforme amostra; base preta.",
+    "confidence": "média",
+    "reason": "Referência identificada na captura enviada; posicionamento adaptado ao contorno atual.",
+    "comparison": "shape"
+  },
+  {
+    "id": "POL-CAP-01",
+    "name": "Poltrona envolvente cinza",
+    "kind": "armchair",
+    "category": "Mobiliário",
+    "image": "/catalog/captures-2026-09-24/150052.png",
+    "finish": "Camira Synergy LDS08, cinza claro conforme amostra.",
+    "confidence": "média",
+    "reason": "Referência identificada na captura enviada; posicionamento adaptado ao contorno atual.",
+    "comparison": "shape"
+  },
+  {
+    "id": "MES-CAP-01",
+    "name": "Mesa de centro preta Ø600",
+    "kind": "table",
+    "category": "Mobiliário",
+    "image": "/catalog/captures-2026-09-24/150104.png",
+    "finish": "Madeira maciça preta RAL 9005.",
+    "confidence": "média",
+    "reason": "Referência identificada na captura enviada; posicionamento adaptado ao contorno atual.",
+    "comparison": "shape"
+  },
+  {
+    "id": "MES-CAP-02",
+    "name": "Mesa de pedestal creme",
+    "kind": "table",
+    "category": "Mobiliário",
+    "image": "/catalog/captures-2026-09-24/150136.png",
+    "finish": "Creme/areia fosco conforme aparência da captura; material não confirmado.",
+    "confidence": "média",
+    "reason": "Referência identificada na captura enviada; posicionamento adaptado ao contorno atual.",
+    "comparison": "shape"
+  },
+  {
+    "id": "SUP-FIC-01",
+    "name": "Bancada Dobra · criação fictícia",
+    "kind": "counter",
+    "category": "Mobiliário",
+    "image": "/catalog/original-designs/dobra.png",
+    "finish": "Freixo claro, tampo mineral marfim, puxadores e rodapé recuado grafite.",
+    "confidence": "média",
+    "reason": "Desenho original criado do zero: bancada em L com frentes lisas, pega discreta, tampo contínuo com canto externo suave e cuba pequena no trecho longo. Uma única instância com duas partes; a posição final de cuba e instalações deve seguir a planta. Sem marca, fabricante ou dimensões comerciais inventadas.",
+    "comparison": "shape"
+  },
+  {
+    "id": "POL-FIC-01",
+    "name": "Poltrona Nexo · criação fictícia",
+    "kind": "armchair",
+    "category": "Mobiliário",
+    "image": "/catalog/original-designs/nexo.png",
+    "finish": "Tecido tramado oliva acinzentado, estrutura tubular fina e pés grafite.",
+    "confidence": "média",
+    "reason": "Desenho original criado do zero para os quatro assentos compactos da convivência: almofada de encosto retangular arredondada independente, assento único, apoios de braço estreitos e estrutura metálica leve. Não deriva de moodboard antigo. Sem marca e sem medidas reais presumidas.",
+    "comparison": "shape"
+  },
+  {
+    "id": "SOF-FIC-01",
+    "name": "Sofá Elo modular em L",
+    "kind": "sofa",
+    "category": "Mobiliário",
+    "image": "/catalog/original-designs/elo.png",
+    "finish": "Tecido cinza-pedra claro e base recuada grafite.",
+    "confidence": "média",
+    "reason": "Criação fictícia original; um conjunto modular em L ocupa os dois trechos existentes.",
+    "comparison": "shape"
+  },
+  {
+    "id": "SUP-FIC-02",
+    "name": "Balcão de apoio Trama",
+    "kind": "counter",
+    "category": "Mobiliário",
+    "image": "/catalog/original-designs/trama.png",
+    "finish": "Tampo e laterais em freixo claro, frentes marfim fosco, puxadores recuados e pés grafite.",
+    "confidence": "média",
+    "reason": "Modelo fictício original aplicado aos balcões de apoio existentes.",
+    "comparison": "shape"
+  }
+]

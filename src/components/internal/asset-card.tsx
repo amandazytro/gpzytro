@@ -1,0 +1,5 @@
+import { FileText, Plus, Check } from "lucide-react";
+import type { Asset, ReferenceDocument } from "@/domain/models";
+export function AssetCard({asset,document,selected,onToggle,onInspect}:{asset:Asset;document?:ReferenceDocument;selected:boolean;onToggle:()=>void;onInspect:()=>void}){
+  return <article className="asset-card"><div className="asset-info"><div className="asset-title"><h3>{asset.referenceName}</h3></div><code>{asset.id}</code><p className="muted">{asset.category} · {asset.element}</p><div className="asset-source"><span><FileText size={13}/>{document?.fileName??asset.sourcePdfName??"No source PDF provided"}</span><small>{asset.sourcePdfId??"PDF ID pending"} · Page {asset.referencePage??"not specified"}</small></div><button className="outline-button" onClick={onInspect}>View reference details</button><button className={"assign-button "+(selected?"selected":"")} disabled={!selected&&!asset.approved} onClick={onToggle}>{selected?<Check size={14}/>:<Plus size={14}/>} {selected?"Remove from room":asset.approved?"Add to room":"Awaiting approval"}</button></div></article>
+}

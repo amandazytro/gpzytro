@@ -1,0 +1,1886 @@
+{
+  "status": "ready",
+  "name": "Carvalho, preto e bouclé · PDF do projeto",
+  "previewImage": "/catalog/moodboard-1-pdf/overview.png",
+  "sourceDocument": {
+    "fileName": "ITENS DE MOODBOARD.pdf",
+    "url": "/catalog/moodboard-1-pdf/source.pdf",
+    "sha256": "203484aee5e974ba3cbd14d9760693acc79538bae83a9f063ea942cfacc968ca",
+    "pageCount": 12,
+    "productPages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "ignoredMarks": "X verdes ignorados por orientação do usuário.",
+    "excluded": "Custos, serviços de armazenagem, condições comerciais e contratuais não fazem parte do catálogo visual."
+  },
+  "allowCompatibleFallback": true,
+  "allowProductAdaptation": true,
+  "palette": {
+    "wood": "Carvalho natural claro",
+    "metal": "Preto fosco",
+    "upholstery": "Creme/off-white e cinza médio",
+    "policy": "Proposta de padronização baseada nos materiais presentes no PDF. Aplicar somente aos acabamentos sem definição; acabamentos explícitos e cadastros do usuário prevalecem."
+  },
+  "products": [
+    {
+      "id": "PDF-SKELF-4000",
+      "name": "Mesa de conselho Skelf · 4.000 mm",
+      "category": "Furniture",
+      "group": "Mesa de conselho",
+      "role": "meeting_table",
+      "image": "/catalog/moodboard-1-pdf/skelf-4000.png",
+      "imageRole": "source_product",
+      "approved": true,
+      "sourceKind": "pdf",
+      "sourceModel": "Skelf bench - Low",
+      "manufacturer": "Não informado no PDF",
+      "supplier": "Cirque Furniture — fornecedor indicado no documento",
+      "roomIds": [
+        "PRISMAL_BOARDROOM"
+      ],
+      "planModelIds": [
+        "MES-03"
+      ],
+      "sourceDimensions": {
+        "widthMm": 4000,
+        "depthMm": 1500,
+        "heightMm": 735
+      },
+      "sourceQuantity": 1,
+      "sourceOccurrences": [
+        {
+          "productId": "PDF-SKELF-4000",
+          "page": 1,
+          "row": 1,
+          "sourceQuantity": 1,
+          "sourceDescription": "Skelf bench - Low W4000mm x D1500mm x H735mm",
+          "sourceFinish": "Finish: Top: MFC, TBC Frame: Oak or Black Oak",
+          "sourceLocation": "11p boardroom",
+          "sourceOption": false
+        }
+      ],
+      "standardizedFinish": "Tampo em carvalho claro e estrutura preta; proposta para o MFC sem acabamento definido.",
+      "finish": "Tampo em carvalho claro e estrutura preta; proposta para o MFC sem acabamento definido.",
+      "finishStatus": "proposed",
+      "adaptationNotes": "Finish proposal; preserve the long boardroom table footprint.",
+      "description": "Tampo em carvalho claro e estrutura preta; proposta para o MFC sem acabamento definido. Finish proposal; preserve the long boardroom table footprint.",
+      "location": "BOARDROOM"
+    },
+    {
+      "id": "PDF-CENTRA-USB",
+      "name": "Módulo de energia Centra · USB",
+      "category": "Equipment",
+      "group": "Energia das mesas",
+      "role": "power",
+      "image": "/catalog/moodboard-1-pdf/centra-usb.png",
+      "imageRole": "source_product",
+      "approved": true,
+      "sourceKind": "pdf",
+      "sourceModel": "Centra power unit 4 Power - 3.15A. Dual USB charger 65W - A + C.",
+      "manufacturer": "Não informado no PDF",
+      "supplier": "Cirque Furniture — fornecedor indicado no documento",
+      "roomIds": [
+        "PRISMAL_BOARDROOM",
+        "PRISMAL_TEAM"
+      ],
+      "planModelIds": [],
+      "sourceDimensions": {},
+      "sourceQuantity": 5,
+      "sourceOccurrences": [
+        {
+          "productId": "PDF-CENTRA-USB",
+          "page": 1,
+          "row": 2,
+          "sourceQuantity": 2,
+          "sourceDescription": "Centra power unit 4 Power - 3.15A. Dual USB charger 65W - A + C.",
+          "sourceFinish": "Finish: White",
+          "sourceLocation": "11p boardroom",
+          "sourceOption": false
+        },
+        {
+          "productId": "PDF-CENTRA-USB",
+          "page": 8,
+          "row": 3,
+          "sourceQuantity": 3,
+          "sourceDescription": "Centra power unit 4 Power - 3.15A. Dual USB charger 65W - A + C.",
+          "sourceFinish": "Finish: White",
+          "sourceLocation": "Hot desk in open plan",
+          "sourceOption": false
+        }
+      ],
+      "standardizedFinish": "Branco, conforme o PDF.",
+      "finish": "Branco, conforme o PDF.",
+      "finishStatus": "source",
+      "adaptationNotes": "Only on existing compatible desk power positions.",
+      "description": "Branco, conforme o PDF. Only on existing compatible desk power positions.",
+      "location": "BOARDROOM, TEAM"
+    },
+    {
+      "id": "PDF-CENTRA-HDMI",
+      "name": "Módulo de energia Centra · HDMI",
+      "category": "Equipment",
+      "group": "Energia de conferência",
+      "role": "power",
+      "image": "/catalog/moodboard-1-pdf/centra-hdmi.png",
+      "imageRole": "source_product",
+      "approved": true,
+      "sourceKind": "pdf",
+      "sourceModel": "Centra power unit 4 Power - 3.15A. Dual USB charger 65W - A + C. 2m Starter lead - BS13A. 1 HDMI 1.4",
+      "manufacturer": "Não informado no PDF",
+      "supplier": "Cirque Furniture — fornecedor indicado no documento",
+      "roomIds": [
+        "PRISMAL_BOARDROOM"
+      ],
+      "planModelIds": [],
+      "sourceDimensions": {},
+      "sourceQuantity": 1,
+      "sourceOccurrences": [
+        {
+          "productId": "PDF-CENTRA-HDMI",
+          "page": 1,
+          "row": 3,
+          "sourceQuantity": 1,
+          "sourceDescription": "Centra power unit 4 Power - 3.15A. Dual USB charger 65W - A + C. 2m Starter lead - BS13A. 1 HDMI 1.4",
+          "sourceFinish": "Finish: White",
+          "sourceLocation": "11p boardroom",
+          "sourceOption": false
+        }
+      ],
+      "standardizedFinish": "Branco, conforme o PDF.",
+      "finish": "Branco, conforme o PDF.",
+      "finishStatus": "source",
+      "adaptationNotes": "Keep as an accessory, never an independent furniture instance.",
+      "description": "Branco, conforme o PDF. Keep as an accessory, never an independent furniture instance.",
+      "location": "BOARDROOM"
+    },
+    {
+      "id": "PDF-STARTER",
+      "name": "Cabo de alimentação · 2 m",
+      "category": "Equipment",
+      "group": "Cabeamento",
+      "role": "cable",
+      "image": "/catalog/moodboard-1-pdf/starter.png",
+      "imageRole": "source_product",
+      "approved": true,
+      "sourceKind": "pdf",
+      "sourceModel": "Starter Cables for above power 2m Starter lead. BS13A - GST.",
+      "manufacturer": "Não informado no PDF",
+      "supplier": "Cirque Furniture — fornecedor indicado no documento",
+      "roomIds": [],
+      "planModelIds": [],
+      "sourceDimensions": {},
+      "sourceQuantity": 6,
+      "sourceOccurrences": [
+        {
+          "productId": "PDF-STARTER",
+          "page": 1,
+          "row": 4,
+          "sourceQuantity": 1,
+          "sourceDescription": "Starter Cables for above power 2m Starter lead. BS13A - GST.",
+          "sourceFinish": "Finish: White",
+          "sourceLocation": "11p boardroom",
+          "sourceOption": false
+        },
+        {
+          "productId": "PDF-STARTER",
+          "page": 2,
+          "row": 7,
+          "sourceQuantity": 1,
+          "sourceDescription": "Starter Cables for above power 2m Starter lead. BS13A - GST.",
+          "sourceFinish": "Finish: White",
+          "sourceLocation": "4p meeting room",
+          "sourceOption": false
+        },
+        {
+          "productId": "PDF-STARTER",
+          "page": 3,
+          "row": 4,
+          "sourceQuantity": 2,
+          "sourceDescription": "Starter Cables for above power 2m Starter lead. BS13A - GST.",
+          "sourceFinish": "Finish: White",
+          "sourceLocation": "6p meeting room",
+          "sourceOption": false
+        },
+        {
+          "productId": "PDF-STARTER",
+          "page": 4,
+          "row": 3,
+          "sourceQuantity": 1,
+          "sourceDescription": "Starter Cables for above power 2m Starter lead. BS13A - GST.",
+          "sourceFinish": "Finish: White",
+          "sourceLocation": "office",
+          "sourceOption": false
+        },
+        {
+          "productId": "PDF-STARTER",
+          "page": 8,
+          "row": 4,
+          "sourceQuantity": 1,
+          "sourceDescription": "Starter Cables for above power 2m Starter lead. BS13A - GST.",
+          "sourceFinish": "Finish: White",
+          "sourceLocation": "Hot desk in open plan",
+          "sourceOption": false
+        }
+      ],
+      "standardizedFinish": "Branco, conforme o PDF.",
+      "finish": "Branco, conforme o PDF.",
+      "finishStatus": "source",
+      "adaptationNotes": "Preserve concealed routing; no visible new cable clutter.",
+      "description": "Branco, conforme o PDF. Preserve concealed routing; no visible new cable clutter.",
+      "location": "Acessório de elementos existentes"
+    },
+    {
+      "id": "PDF-INTERCONNECT",
+      "name": "Cabo de interligação · 2 m",
+      "category": "Equipment",
+      "group": "Interligação",
+      "role": "cable",
+      "image": "/catalog/moodboard-1-pdf/interconnect.png",
+      "imageRole": "source_product",
+      "approved": true,
+      "sourceKind": "pdf",
+      "sourceModel": "Interconnect Leads for above power 2m Interconnect lead. GST - GST.",
+      "manufacturer": "Não informado no PDF",
+      "supplier": "Cirque Furniture — fornecedor indicado no documento",
+      "roomIds": [],
+      "planModelIds": [],
+      "sourceDimensions": {},
+      "sourceQuantity": 4,
+      "sourceOccurrences": [
+        {
+          "productId": "PDF-INTERCONNECT",
+          "page": 2,
+          "row": 1,
+          "sourceQuantity": 2,
+          "sourceDescription": "Interconnect Leads for above power 2m Interconnect lead. GST - GST.",
+          "sourceFinish": "Finish: White",
+          "sourceLocation": "11p boardroom",
+          "sourceOption": false
+        },
+        {
+          "productId": "PDF-INTERCONNECT",
+          "page": 8,
+          "row": 5,
+          "sourceQuantity": 2,
+          "sourceDescription": "Interconnect Leads for above power 2m Interconnect lead. GST - GST.",
+          "sourceFinish": "Finish: White",
+          "sourceLocation": "Hot desk in open plan",
+          "sourceOption": false
+        }
+      ],
+      "standardizedFinish": "Branco, conforme o PDF.",
+      "finish": "Branco, conforme o PDF.",
+      "finishStatus": "source",
+      "adaptationNotes": "Technical reference only; do not create furniture.",
+      "description": "Branco, conforme o PDF. Technical reference only; do not create furniture.",
+      "location": "Acessório de elementos existentes"
+    },
+    {
+      "id": "PDF-CABLE-SOCK",
+      "name": "Organizador de cabos",
+      "category": "Equipment",
+      "group": "Organização de cabos",
+      "role": "cable",
+      "image": "/catalog/moodboard-1-pdf/no-image.png",
+      "imageRole": "missing",
+      "approved": true,
+      "sourceKind": "pdf",
+      "sourceModel": "Cable sock for static hight desks and tables",
+      "manufacturer": "Não informado no PDF",
+      "supplier": "Cirque Furniture — fornecedor indicado no documento",
+      "roomIds": [],
+      "planModelIds": [],
+      "sourceDimensions": {},
+      "sourceQuantity": 18,
+      "sourceOccurrences": [
+        {
+          "productId": "PDF-CABLE-SOCK",
+          "page": 2,
+          "row": 2,
+          "sourceQuantity": 1,
+          "sourceDescription": "Cable sock for static hight desks and tables",
+          "sourceFinish": "White",
+          "sourceLocation": "11p boardroom",
+          "sourceOption": false
+        },
+        {
+          "productId": "PDF-CABLE-SOCK",
+          "page": 2,
+          "row": 8,
+          "sourceQuantity": 1,
+          "sourceDescription": "Cable sock for static hight desks and tables",
+          "sourceFinish": "White",
+          "sourceLocation": "4p meeting room",
+          "sourceOption": false
+        },
+        {
+          "productId": "PDF-CABLE-SOCK",
+          "page": 3,
+          "row": 5,
+          "sourceQuantity": 1,
+          "sourceDescription": "Cable sock for static hight desks and tables",
+          "sourceFinish": "White",
+          "sourceLocation": "6p meeting room",
+          "sourceOption": false
+        },
+        {
+          "productId": "PDF-CABLE-SOCK",
+          "page": 4,
+          "row": 4,
+          "sourceQuantity": 1,
+          "sourceDescription": "Cable sock for static hight desks and tables",
+          "sourceFinish": "White",
+          "sourceLocation": "office",
+          "sourceOption": false
+        },
+        {
+          "productId": "PDF-CABLE-SOCK",
+          "page": 5,
+          "row": 2,
+          "sourceQuantity": 1,
+          "sourceDescription": "Cable sock for static hight desks and tables",
+          "sourceFinish": "White",
+          "sourceLocation": "office",
+          "sourceOption": false
+        },
+        {
+          "productId": "PDF-CABLE-SOCK",
+          "page": 8,
+          "row": 6,
+          "sourceQuantity": 1,
+          "sourceDescription": "Cable sock for static hight desks and tables",
+          "sourceFinish": "White",
+          "sourceLocation": "Hot desk in open plan",
+          "sourceOption": false
+        },
+        {
+          "productId": "PDF-CABLE-SOCK",
+          "page": 9,
+          "row": 2,
+          "sourceQuantity": 12,
+          "sourceDescription": "Cable sock for static hight desks and tables",
+          "sourceFinish": "White",
+          "sourceLocation": "open plan",
+          "sourceOption": false
+        }
+      ],
+      "standardizedFinish": "Branco, conforme o PDF.",
+      "finish": "Branco, conforme o PDF.",
+      "finishStatus": "source",
+      "adaptationNotes": "The PDF provides no image; shape is unspecified.",
+      "description": "Branco, conforme o PDF. The PDF provides no image; shape is unspecified.",
+      "location": "Acessório de elementos existentes"
+    },
+    {
+      "id": "PDF-CREDENZA",
+      "name": "Armário baixo · 3 portas",
+      "category": "Joinery",
+      "group": "Armário baixo",
+      "role": "storage",
+      "image": "/catalog/moodboard-1-pdf/credenza.png",
+      "imageRole": "source_product",
+      "approved": true,
+      "sourceKind": "pdf",
+      "sourceModel": "Credenza",
+      "manufacturer": "Não informado no PDF",
+      "supplier": "Cirque Furniture — fornecedor indicado no documento",
+      "roomIds": [
+        "PRISMAL_BOARDROOM",
+        "PRISMAL_MEETING_1"
+      ],
+      "planModelIds": [
+        "SUP-02"
+      ],
+      "sourceDimensions": {
+        "widthMm": 1565,
+        "depthMm": 550,
+        "heightMm": 735
+      },
+      "sourceQuantity": 3,
+      "sourceOccurrences": [
+        {
+          "productId": "PDF-CREDENZA",
+          "page": 2,
+          "row": 3,
+          "sourceQuantity": 2,
+          "sourceDescription": "Credenza W1565mm x D550mm x H735mm 3 door unit with handles Plinth base",
+          "sourceFinish": "Finish: MFC TBC",
+          "sourceLocation": "11p boardroom",
+          "sourceOption": false
+        },
+        {
+          "productId": "PDF-CREDENZA",
+          "page": 3,
+          "row": 6,
+          "sourceQuantity": 1,
+          "sourceDescription": "Credenza W1565mm x D550mm x H735mm 3 door unit with handles Plinth base",
+          "sourceFinish": "Finish: MFC TBC",
+          "sourceLocation": "6p meeting room",
+          "sourceOption": false
+        }
+      ],
+      "standardizedFinish": "Carvalho claro nas frentes e base preta; proposta para MFC TBC.",
+      "finish": "Carvalho claro nas frentes e base preta; proposta para MFC TBC.",
+      "finishStatus": "proposed",
+      "adaptationNotes": "Preserve existing storage footprint; do not add quoted units absent from plan.",
+      "description": "Carvalho claro nas frentes e base preta; proposta para MFC TBC. Preserve existing storage footprint; do not add quoted units absent from plan.",
+      "location": "BOARDROOM, MEETING_1"
+    },
+    {
+      "id": "PDF-BUTE",
+      "name": "Cadeira de reunião Bute",
+      "category": "Furniture",
+      "group": "Cadeira de reunião",
+      "role": "meeting_chair",
+      "image": "/catalog/moodboard-1-pdf/bute.png",
+      "imageRole": "source_product",
+      "approved": true,
+      "sourceKind": "pdf",
+      "sourceModel": "Bute meeting chair",
+      "manufacturer": "Não informado no PDF",
+      "supplier": "Cirque Furniture — fornecedor indicado no documento",
+      "roomIds": [
+        "PRISMAL_BOARDROOM",
+        "PRISMAL_HUDDLE_1",
+        "PRISMAL_MEETING_1"
+      ],
+      "planModelIds": [
+        "CAD-03",
+        "CAD-04"
+      ],
+      "sourceDimensions": {},
+      "sourceQuantity": 21,
+      "sourceOccurrences": [
+        {
+          "productId": "PDF-BUTE",
+          "page": 2,
+          "row": 4,
+          "sourceQuantity": 11,
+          "sourceDescription": "Bute meeting chair Seat weight & tilt",
+          "sourceFinish": "Finish: Black",
+          "sourceLocation": "11p boardroom",
+          "sourceOption": false
+        },
+        {
+          "productId": "PDF-BUTE",
+          "page": 3,
+          "row": 1,
+          "sourceQuantity": 4,
+          "sourceDescription": "Bute meeting chair Seat weight & tilt",
+          "sourceFinish": "Finish: Black",
+          "sourceLocation": "4p meeting room",
+          "sourceOption": false
+        },
+        {
+          "productId": "PDF-BUTE",
+          "page": 3,
+          "row": 7,
+          "sourceQuantity": 6,
+          "sourceDescription": "Bute meeting chair Seat weight & tilt",
+          "sourceFinish": "Finish: Black",
+          "sourceLocation": "6p meeting room",
+          "sourceOption": false
+        }
+      ],
+      "standardizedFinish": "Preto, conforme o PDF.",
+      "finish": "Preto, conforme o PDF.",
+      "finishStatus": "source",
+      "adaptationNotes": "Use one chair per mapped seat; preserve orientation.",
+      "description": "Preto, conforme o PDF. Use one chair per mapped seat; preserve orientation.",
+      "location": "BOARDROOM, HUDDLE_1, MEETING_1"
+    },
+    {
+      "id": "PDF-SKEF-1000",
+      "name": "Mesa circular Skef · Ø 1.000 mm",
+      "category": "Furniture",
+      "group": "Mesa de reunião pequena",
+      "role": "meeting_table",
+      "image": "/catalog/moodboard-1-pdf/skef-1000.png",
+      "imageRole": "source_product",
+      "approved": true,
+      "sourceKind": "pdf",
+      "sourceModel": "Skef table - circular",
+      "manufacturer": "Não informado no PDF",
+      "supplier": "Cirque Furniture — fornecedor indicado no documento",
+      "roomIds": [
+        "PRISMAL_HUDDLE_1"
+      ],
+      "planModelIds": [
+        "MES-04"
+      ],
+      "sourceDimensions": {
+        "diameterMm": 1000,
+        "heightMm": 735
+      },
+      "sourceQuantity": 1,
+      "sourceOccurrences": [
+        {
+          "productId": "PDF-SKEF-1000",
+          "page": 2,
+          "row": 5,
+          "sourceQuantity": 1,
+          "sourceDescription": "Skef table - circular D1000mm x H735mm",
+          "sourceFinish": "Finish: Top: MFC, TBC Frame: Oak or Black Oak",
+          "sourceLocation": "4p meeting room",
+          "sourceOption": false
+        }
+      ],
+      "standardizedFinish": "Tampo carvalho claro e base carvalho natural; proposta para MFC TBC.",
+      "finish": "Tampo carvalho claro e base carvalho natural; proposta para MFC TBC.",
+      "finishStatus": "proposed",
+      "adaptationNotes": "Nominal source diameter; the measured plan takes precedence.",
+      "description": "Tampo carvalho claro e base carvalho natural; proposta para MFC TBC. Nominal source diameter; the measured plan takes precedence.",
+      "location": "HUDDLE_1"
+    },
+    {
+      "id": "PDF-ROUND-POWER",
+      "name": "Módulo circular de energia e USB",
+      "category": "Equipment",
+      "group": "Energia circular",
+      "role": "power",
+      "image": "/catalog/moodboard-1-pdf/round-power.png",
+      "imageRole": "source_product",
+      "approved": true,
+      "sourceKind": "pdf",
+      "sourceModel": "power unit 1 Power 3.15A. Triple USB charger 5v DC 3.1A – A + C + C. 1 HDMI.",
+      "manufacturer": "Não informado no PDF",
+      "supplier": "Cirque Furniture — fornecedor indicado no documento",
+      "roomIds": [
+        "PRISMAL_HUDDLE_1",
+        "PRISMAL_EXECUTIVE"
+      ],
+      "planModelIds": [],
+      "sourceDimensions": {},
+      "sourceQuantity": 2,
+      "sourceOccurrences": [
+        {
+          "productId": "PDF-ROUND-POWER",
+          "page": 2,
+          "row": 6,
+          "sourceQuantity": 1,
+          "sourceDescription": "power unit 1 Power 3.15A. Triple USB charger 5v DC 3.1A – A + C + C. 1 HDMI.",
+          "sourceFinish": "Finish: White",
+          "sourceLocation": "4p meeting room",
+          "sourceOption": false
+        },
+        {
+          "productId": "PDF-ROUND-POWER",
+          "page": 4,
+          "row": 2,
+          "sourceQuantity": 1,
+          "sourceDescription": "power unit 1 Power 3.15A. Triple USB charger 5v DC 3.1A – A + C + C. 1 HDMI.",
+          "sourceFinish": "Finish: White",
+          "sourceLocation": "office",
+          "sourceOption": false
+        }
+      ],
+      "standardizedFinish": "Branco, conforme o PDF.",
+      "finish": "Branco, conforme o PDF.",
+      "finishStatus": "source",
+      "adaptationNotes": "Use only an existing compatible tabletop accessory.",
+      "description": "Branco, conforme o PDF. Use only an existing compatible tabletop accessory.",
+      "location": "HUDDLE_1, EXECUTIVE"
+    },
+    {
+      "id": "PDF-SKEF-1400",
+      "name": "Mesa circular Skef · Ø 1.400 mm",
+      "category": "Furniture",
+      "group": "Mesa de reunião grande",
+      "role": "meeting_table",
+      "image": "/catalog/moodboard-1-pdf/skef-1400.png",
+      "imageRole": "source_product",
+      "approved": true,
+      "sourceKind": "pdf",
+      "sourceModel": "Skef table - circular",
+      "manufacturer": "Não informado no PDF",
+      "supplier": "Cirque Furniture — fornecedor indicado no documento",
+      "roomIds": [
+        "PRISMAL_MEETING_1"
+      ],
+      "planModelIds": [
+        "MES-05"
+      ],
+      "sourceDimensions": {
+        "diameterMm": 1400,
+        "heightMm": 735
+      },
+      "sourceQuantity": 1,
+      "sourceOccurrences": [
+        {
+          "productId": "PDF-SKEF-1400",
+          "page": 3,
+          "row": 2,
+          "sourceQuantity": 1,
+          "sourceDescription": "Skef table - circular D1400mm x H735mm",
+          "sourceFinish": "Finish: Top: MFC, TBC Frame: Oak or Black Oak",
+          "sourceLocation": "6p meeting room",
+          "sourceOption": false
+        }
+      ],
+      "standardizedFinish": "Tampo carvalho claro e base carvalho natural; proposta para MFC TBC.",
+      "finish": "Tampo carvalho claro e base carvalho natural; proposta para MFC TBC.",
+      "finishStatus": "proposed",
+      "adaptationNotes": "Keep the larger meeting-table role, not the smaller table size.",
+      "description": "Tampo carvalho claro e base carvalho natural; proposta para MFC TBC. Keep the larger meeting-table role, not the smaller table size.",
+      "location": "MEETING_1"
+    },
+    {
+      "id": "PDF-BLINKY",
+      "name": "Módulo de energia Blinky",
+      "category": "Equipment",
+      "group": "Energia da mesa grande",
+      "role": "power",
+      "image": "/catalog/moodboard-1-pdf/blinky.png",
+      "imageRole": "source_product",
+      "approved": true,
+      "sourceKind": "pdf",
+      "sourceModel": "Blinky power unit 3 Power - 3.15A. 3 Dual USB charger 30W - A + C.",
+      "manufacturer": "Não informado no PDF",
+      "supplier": "Cirque Furniture — fornecedor indicado no documento",
+      "roomIds": [
+        "PRISMAL_MEETING_1"
+      ],
+      "planModelIds": [],
+      "sourceDimensions": {},
+      "sourceQuantity": 1,
+      "sourceOccurrences": [
+        {
+          "productId": "PDF-BLINKY",
+          "page": 3,
+          "row": 3,
+          "sourceQuantity": 1,
+          "sourceDescription": "Blinky power unit 3 Power - 3.15A. 3 Dual USB charger 30W - A + C.",
+          "sourceFinish": "Finish: White",
+          "sourceLocation": "6p meeting room",
+          "sourceOption": false
+        }
+      ],
+      "standardizedFinish": "Branco, conforme o PDF.",
+      "finish": "Branco, conforme o PDF.",
+      "finishStatus": "source",
+      "adaptationNotes": "Preserve existing equipment and connectors.",
+      "description": "Branco, conforme o PDF. Preserve existing equipment and connectors.",
+      "location": "MEETING_1"
+    },
+    {
+      "id": "PDF-EXISTING-ROUND",
+      "name": "Mesa circular existente · escritório",
+      "category": "Furniture",
+      "group": "Mesa de apoio do escritório",
+      "role": "meeting_table",
+      "image": "/catalog/moodboard-1-pdf/existing-round.png",
+      "imageRole": "source_product",
+      "approved": true,
+      "sourceKind": "pdf",
+      "sourceModel": "Existing round table",
+      "manufacturer": "Não informado no PDF",
+      "supplier": "Cirque Furniture — fornecedor indicado no documento",
+      "roomIds": [
+        "PRISMAL_EXECUTIVE"
+      ],
+      "planModelIds": [
+        "MES-09"
+      ],
+      "sourceDimensions": {
+        "diameterMm": 1000,
+        "heightMm": 735
+      },
+      "sourceQuantity": 1,
+      "sourceOccurrences": [
+        {
+          "productId": "PDF-EXISTING-ROUND",
+          "page": 4,
+          "row": 1,
+          "sourceQuantity": 1,
+          "sourceDescription": "Existing round table D1000mm x H735mm",
+          "sourceFinish": "Finish: As pictured",
+          "sourceLocation": "office",
+          "sourceOption": false
+        }
+      ],
+      "standardizedFinish": "Madeira e base metálica conforme a fotografia.",
+      "finish": "Madeira e base metálica conforme a fotografia.",
+      "finishStatus": "source",
+      "adaptationNotes": "Do not import surrounding chairs, papers or room background from the source photo.",
+      "description": "Madeira e base metálica conforme a fotografia. Do not import surrounding chairs, papers or room background from the source photo.",
+      "location": "EXECUTIVE"
+    },
+    {
+      "id": "PDF-EXISTING-CHAIR",
+      "name": "Cadeira existente de reunião",
+      "category": "Furniture",
+      "group": "Cadeira existente",
+      "role": "meeting_chair",
+      "image": "/catalog/moodboard-1-pdf/existing-chair.png",
+      "imageRole": "source_product",
+      "approved": true,
+      "sourceKind": "pdf",
+      "sourceModel": "Existing meeting chairs",
+      "manufacturer": "Não informado no PDF",
+      "supplier": "Cirque Furniture — fornecedor indicado no documento",
+      "roomIds": [
+        "PRISMAL_EXECUTIVE",
+        "PRISMAL_PHONE"
+      ],
+      "planModelIds": [
+        "POL-02"
+      ],
+      "sourceDimensions": {},
+      "sourceQuantity": 3,
+      "sourceOccurrences": [
+        {
+          "productId": "PDF-EXISTING-CHAIR",
+          "page": 4,
+          "row": 5,
+          "sourceQuantity": 2,
+          "sourceDescription": "Existing meeting chairs",
+          "sourceFinish": "As pictured",
+          "sourceLocation": "office",
+          "sourceOption": false
+        },
+        {
+          "productId": "PDF-EXISTING-CHAIR",
+          "page": 7,
+          "row": 5,
+          "sourceQuantity": 1,
+          "sourceDescription": "Existing meeting chairs",
+          "sourceFinish": "As pictured",
+          "sourceLocation": "phone booth",
+          "sourceOption": false
+        }
+      ],
+      "standardizedFinish": "Preto e estrutura metálica, conforme a fotografia.",
+      "finish": "Preto e estrutura metálica, conforme a fotografia.",
+      "finishStatus": "source",
+      "adaptationNotes": "Only existing seats; never add the quoted quantity to the plan.",
+      "description": "Preto e estrutura metálica, conforme a fotografia. Only existing seats; never add the quoted quantity to the plan.",
+      "location": "EXECUTIVE, PHONE"
+    },
+    {
+      "id": "PDF-AARAN",
+      "name": "Cadeira de trabalho Aaran",
+      "category": "Furniture",
+      "group": "Cadeira de trabalho",
+      "role": "office_chair",
+      "image": "/catalog/moodboard-1-pdf/aaran.png",
+      "imageRole": "source_product",
+      "approved": true,
+      "sourceKind": "pdf",
+      "sourceModel": "New Task chair - Aaran task chair",
+      "manufacturer": "Não informado no PDF",
+      "supplier": "Cirque Furniture — fornecedor indicado no documento",
+      "roomIds": [
+        "PRISMAL_WORK_WEST",
+        "PRISMAL_TEAM",
+        "PRISMAL_EXECUTIVE"
+      ],
+      "planModelIds": [
+        "CAD-01",
+        "CAD-02",
+        "CAD-06"
+      ],
+      "sourceDimensions": {},
+      "sourceQuantity": 31,
+      "sourceOccurrences": [
+        {
+          "productId": "PDF-AARAN",
+          "page": 4,
+          "row": 6,
+          "sourceQuantity": 1,
+          "sourceDescription": "New Task chair - Aaran task chair Adjustable lumbar support Adjustable arm rest/seat slide",
+          "sourceFinish": "Finish: Black",
+          "sourceLocation": "office",
+          "sourceOption": false
+        },
+        {
+          "productId": "PDF-AARAN",
+          "page": 9,
+          "row": 5,
+          "sourceQuantity": 30,
+          "sourceDescription": "New Task chair - Aaran task chair Adjustable lumbar support Adjustable arm rest/seat slide",
+          "sourceFinish": "Finish: Black",
+          "sourceLocation": "open plan - Hot desk in open plan",
+          "sourceOption": false
+        }
+      ],
+      "standardizedFinish": "Preto, conforme o PDF.",
+      "finish": "Preto, conforme o PDF.",
+      "finishStatus": "source",
+      "adaptationNotes": "Keep every existing workstation chair and all monitors and equipment.",
+      "description": "Preto, conforme o PDF. Keep every existing workstation chair and all monitors and equipment.",
+      "location": "WORK_WEST, TEAM, EXECUTIVE"
+    },
+    {
+      "id": "PDF-SINGLE-DESK",
+      "name": "Mesa individual · 1.600 × 800 mm",
+      "category": "Furniture",
+      "group": "Mesa individual",
+      "role": "desk",
+      "image": "/catalog/moodboard-1-pdf/single-desk.png",
+      "imageRole": "source_product",
+      "approved": true,
+      "sourceKind": "pdf",
+      "sourceModel": "Single Desk",
+      "manufacturer": "Não informado no PDF",
+      "supplier": "Cirque Furniture — fornecedor indicado no documento",
+      "roomIds": [
+        "PRISMAL_EXECUTIVE"
+      ],
+      "planModelIds": [
+        "MES-07"
+      ],
+      "sourceDimensions": {
+        "widthMm": 1600,
+        "depthMm": 800,
+        "heightMm": 735
+      },
+      "sourceQuantity": 1,
+      "sourceOccurrences": [
+        {
+          "productId": "PDF-SINGLE-DESK",
+          "page": 4,
+          "row": 7,
+          "sourceQuantity": 1,
+          "sourceDescription": "Single Desk W1600mm x D800mm x H735mm",
+          "sourceFinish": "Finish: Top: MFC, TBC Frame: Black",
+          "sourceLocation": "office",
+          "sourceOption": false
+        }
+      ],
+      "standardizedFinish": "Tampo carvalho claro e estrutura preta; proposta para MFC TBC.",
+      "finish": "Tampo carvalho claro e estrutura preta; proposta para MFC TBC.",
+      "finishStatus": "proposed",
+      "adaptationNotes": "The photograph shows a bench system: use only one desk module, no extra chairs or monitors.",
+      "description": "Tampo carvalho claro e estrutura preta; proposta para MFC TBC. The photograph shows a bench system: use only one desk module, no extra chairs or monitors.",
+      "location": "EXECUTIVE"
+    },
+    {
+      "id": "PDF-DESK-POWER",
+      "name": "Kit de energia sobre e sob a mesa",
+      "category": "Equipment",
+      "group": "Energia das estações",
+      "role": "power",
+      "image": "/catalog/moodboard-1-pdf/desk-power.png",
+      "imageRole": "source_product",
+      "approved": true,
+      "sourceKind": "pdf",
+      "sourceModel": "Above and below desk power Desk top power : 2 Power - 3.15A thermal reset. Dual USB charger 30W - A + C. . Desk clamp. Below Power: 4 Power - 5A. 1m Starter lead - GST & 1m Interconnect lead. GST - GST.",
+      "manufacturer": "Não informado no PDF",
+      "supplier": "Cirque Furniture — fornecedor indicado no documento",
+      "roomIds": [
+        "PRISMAL_WORK_WEST",
+        "PRISMAL_EXECUTIVE"
+      ],
+      "planModelIds": [],
+      "sourceDimensions": {},
+      "sourceQuantity": 25,
+      "sourceOccurrences": [
+        {
+          "productId": "PDF-DESK-POWER",
+          "page": 5,
+          "row": 1,
+          "sourceQuantity": 1,
+          "sourceDescription": "Above and below desk power Desk top power : 2 Power - 3.15A thermal reset. Dual USB charger 30W - A + C. . Desk clamp. Below Power: 4 Power - 5A. 1m Starter lead - GST & 1m Interconnect lead. GST - GST.",
+          "sourceFinish": "Finish: Black",
+          "sourceLocation": "office",
+          "sourceOption": false
+        },
+        {
+          "productId": "PDF-DESK-POWER",
+          "page": 9,
+          "row": 1,
+          "sourceQuantity": 24,
+          "sourceDescription": "Above and below desk power Desk top power : 2 Power - 3.15A thermal reset. Dual USB charger 30W - A + C. . Desk clamp. Below Power: 4 Power - 5A. 1m Starter lead - GST & 1m Interconnect lead. GST - GST.",
+          "sourceFinish": "Finish: Black",
+          "sourceLocation": "open plan",
+          "sourceOption": false
+        }
+      ],
+      "standardizedFinish": "Preto, conforme o PDF.",
+      "finish": "Preto, conforme o PDF.",
+      "finishStatus": "source",
+      "adaptationNotes": "Accessory kit, not two new furniture instances.",
+      "description": "Preto, conforme o PDF. Accessory kit, not two new furniture instances.",
+      "location": "WORK_WEST, EXECUTIVE"
+    },
+    {
+      "id": "PDF-MONITOR-ARM",
+      "name": "Braço de monitor Move",
+      "category": "Equipment",
+      "group": "Suporte de monitor",
+      "role": "monitor_arm",
+      "image": "/catalog/moodboard-1-pdf/monitor-arm.png",
+      "imageRole": "source_product",
+      "approved": true,
+      "sourceKind": "pdf",
+      "sourceModel": "Move monitor arm Load rating 2-9kg with Vesa plate and desk clamp",
+      "manufacturer": "Não informado no PDF",
+      "supplier": "Cirque Furniture — fornecedor indicado no documento",
+      "roomIds": [
+        "PRISMAL_WORK_WEST",
+        "PRISMAL_EXECUTIVE"
+      ],
+      "planModelIds": [],
+      "sourceDimensions": {},
+      "sourceQuantity": 25,
+      "sourceOccurrences": [
+        {
+          "productId": "PDF-MONITOR-ARM",
+          "page": 5,
+          "row": 3,
+          "sourceQuantity": 1,
+          "sourceDescription": "Move monitor arm Load rating 2-9kg with Vesa plate and desk clamp",
+          "sourceFinish": "Finish: Black (or white)",
+          "sourceLocation": "office",
+          "sourceOption": false
+        },
+        {
+          "productId": "PDF-MONITOR-ARM",
+          "page": 9,
+          "row": 6,
+          "sourceQuantity": 24,
+          "sourceDescription": "Move monitor arm Load rating 2-9kg with Vesa plate and desk clamp",
+          "sourceFinish": "Finish: Black (or white)",
+          "sourceLocation": "open plan",
+          "sourceOption": false
+        }
+      ],
+      "standardizedFinish": "Preto; opção branca consta no PDF.",
+      "finish": "Preto; opção branca consta no PDF.",
+      "finishStatus": "source",
+      "adaptationNotes": "Retain actual existing monitor count, screen size and mounting points.",
+      "description": "Preto; opção branca consta no PDF. Retain actual existing monitor count, screen size and mounting points.",
+      "location": "WORK_WEST, EXECUTIVE"
+    },
+    {
+      "id": "PDF-LOLA",
+      "name": "Poltrona Lola Lounge",
+      "category": "Furniture",
+      "group": "Poltrona de espera",
+      "role": "armchair",
+      "image": "/catalog/moodboard-1-pdf/lola.png",
+      "imageRole": "source_product",
+      "approved": true,
+      "sourceKind": "pdf",
+      "sourceModel": "Lola Lounge",
+      "manufacturer": "Não informado no PDF",
+      "supplier": "Cirque Furniture — fornecedor indicado no documento",
+      "roomIds": [
+        "PRISMAL_WAITING"
+      ],
+      "planModelIds": [
+        "POL-01"
+      ],
+      "sourceDimensions": {
+        "widthMm": 860,
+        "depthMm": 880,
+        "heightMm": 880
+      },
+      "sourceQuantity": 2,
+      "sourceOccurrences": [
+        {
+          "productId": "PDF-LOLA",
+          "page": 5,
+          "row": 4,
+          "sourceQuantity": 2,
+          "sourceDescription": "Lola Lounge W860mm x D880mm x H880mm",
+          "sourceFinish": "Finish: Band 3",
+          "sourceLocation": "Entrance",
+          "sourceOption": true
+        }
+      ],
+      "standardizedFinish": "Tecido creme e base preta; cor proposta, faixa Band 3 não define cor.",
+      "finish": "Tecido creme e base preta; cor proposta, faixa Band 3 não define cor.",
+      "finishStatus": "proposed",
+      "adaptationNotes": "Default for the angular waiting seats; maintain their existing rotated footprint.",
+      "description": "Tecido creme e base preta; cor proposta, faixa Band 3 não define cor. Default for the angular waiting seats; maintain their existing rotated footprint.",
+      "location": "WAITING"
+    },
+    {
+      "id": "PDF-RICO",
+      "name": "Poltrona Rico Lounge",
+      "category": "Furniture",
+      "group": "Poltrona de espera",
+      "role": "armchair",
+      "image": "/catalog/moodboard-1-pdf/rico.png",
+      "imageRole": "source_product",
+      "approved": true,
+      "sourceKind": "pdf",
+      "sourceModel": "Rico Lounge",
+      "manufacturer": "Não informado no PDF",
+      "supplier": "Cirque Furniture — fornecedor indicado no documento",
+      "roomIds": [
+        "PRISMAL_WAITING"
+      ],
+      "planModelIds": [
+        "POL-01"
+      ],
+      "sourceDimensions": {
+        "widthMm": 870,
+        "depthMm": 760,
+        "heightMm": 765
+      },
+      "sourceQuantity": 2,
+      "sourceOccurrences": [
+        {
+          "productId": "PDF-RICO",
+          "page": 5,
+          "row": 5,
+          "sourceQuantity": 2,
+          "sourceDescription": "Rico Lounge W870mm x D760mm x H765mm",
+          "sourceFinish": "Finish: Boucle - Off-White",
+          "sourceLocation": "Entrance",
+          "sourceOption": false
+        }
+      ],
+      "standardizedFinish": "Bouclé off-white, conforme o PDF.",
+      "finish": "Bouclé off-white, conforme o PDF.",
+      "finishStatus": "source",
+      "adaptationNotes": "Alternative to Lola, not additional seating. Allow silhouette adaptation only within existing seat bounds.",
+      "description": "Bouclé off-white, conforme o PDF. Alternative to Lola, not additional seating. Allow silhouette adaptation only within existing seat bounds.",
+      "location": "WAITING"
+    },
+    {
+      "id": "PDF-COFFEE-450",
+      "name": "Mesa de apoio · Ø 450 mm",
+      "category": "Furniture",
+      "group": "Mesa de apoio pequena",
+      "role": "coffee_table",
+      "image": "/catalog/moodboard-1-pdf/coffee-450.png",
+      "imageRole": "source_product",
+      "approved": true,
+      "sourceKind": "pdf",
+      "sourceModel": "New - Round coffee table",
+      "manufacturer": "Não informado no PDF",
+      "supplier": "Cirque Furniture — fornecedor indicado no documento",
+      "roomIds": [
+        "PRISMAL_WAITING",
+        "PRISMAL_LOUNGE"
+      ],
+      "planModelIds": [
+        "MES-08"
+      ],
+      "sourceDimensions": {
+        "diameterMm": 450,
+        "heightMm": 425
+      },
+      "sourceQuantity": 2,
+      "sourceOccurrences": [
+        {
+          "productId": "PDF-COFFEE-450",
+          "page": 5,
+          "row": 6,
+          "sourceQuantity": 1,
+          "sourceDescription": "New - Round coffee table D450mm x H425mm Pedestal base",
+          "sourceFinish": "Finish: Top: Oak Frame: Black",
+          "sourceLocation": "Entrance",
+          "sourceOption": false
+        },
+        {
+          "productId": "PDF-COFFEE-450",
+          "page": 7,
+          "row": 3,
+          "sourceQuantity": 1,
+          "sourceDescription": "New - Round coffee table D450mm x H425mm Pedestal base",
+          "sourceFinish": "Finish: Top: Oak Frame: Black",
+          "sourceLocation": "Tea point",
+          "sourceOption": false
+        }
+      ],
+      "standardizedFinish": "Tampo carvalho e base preta conforme texto do PDF; a fotografia mostra base branca.",
+      "finish": "Tampo carvalho e base preta conforme texto do PDF; a fotografia mostra base branca.",
+      "finishStatus": "source",
+      "adaptationNotes": "Written finish overrides photo. Height 425 mm: this is a low table.",
+      "description": "Tampo carvalho e base preta conforme texto do PDF; a fotografia mostra base branca. Written finish overrides photo. Height 425 mm: this is a low table.",
+      "location": "WAITING, LOUNGE"
+    },
+    {
+      "id": "PDF-SKELF-2400",
+      "name": "Mesa da copa Skelf · 2.400 mm",
+      "category": "Furniture",
+      "group": "Mesa da copa",
+      "role": "dining_table",
+      "image": "/catalog/moodboard-1-pdf/skelf-2400.png",
+      "imageRole": "source_product",
+      "approved": true,
+      "sourceKind": "pdf",
+      "sourceModel": "Skelf bench - Low",
+      "manufacturer": "Não informado no PDF",
+      "supplier": "Cirque Furniture — fornecedor indicado no documento",
+      "roomIds": [
+        "PRISMAL_LOUNGE"
+      ],
+      "planModelIds": [
+        "MES-06"
+      ],
+      "sourceDimensions": {
+        "widthMm": 2400,
+        "depthMm": 1200,
+        "heightMm": 735
+      },
+      "sourceQuantity": 1,
+      "sourceOccurrences": [
+        {
+          "productId": "PDF-SKELF-2400",
+          "page": 6,
+          "row": 1,
+          "sourceQuantity": 1,
+          "sourceDescription": "Skelf bench - Low W2400mm x D1200mm x H735mm",
+          "sourceFinish": "Finish: Top: MFC, TBC Frame: Oak or Black Oak",
+          "sourceLocation": "Tea point",
+          "sourceOption": false
+        }
+      ],
+      "standardizedFinish": "Tampo carvalho claro e estrutura preta; proposta para MFC TBC.",
+      "finish": "Tampo carvalho claro e estrutura preta; proposta para MFC TBC.",
+      "finishStatus": "proposed",
+      "adaptationNotes": "Retain the existing dining table and its six mapped chairs.",
+      "description": "Tampo carvalho claro e estrutura preta; proposta para MFC TBC. Retain the existing dining table and its six mapped chairs.",
+      "location": "LOUNGE"
+    },
+    {
+      "id": "PDF-HERMAN-DINING",
+      "name": "Cadeira de jantar Herman",
+      "category": "Furniture",
+      "group": "Cadeira da copa",
+      "role": "dining_chair",
+      "image": "/catalog/moodboard-1-pdf/herman-dining.png",
+      "imageRole": "source_product",
+      "approved": true,
+      "sourceKind": "pdf",
+      "sourceModel": "Herman Dining Chair Wood",
+      "manufacturer": "Não informado no PDF",
+      "supplier": "Cirque Furniture — fornecedor indicado no documento",
+      "roomIds": [
+        "PRISMAL_LOUNGE"
+      ],
+      "planModelIds": [
+        "CAD-05"
+      ],
+      "sourceDimensions": {
+        "widthMm": 475,
+        "depthMm": 460,
+        "heightMm": 755
+      },
+      "sourceQuantity": 8,
+      "sourceOccurrences": [
+        {
+          "productId": "PDF-HERMAN-DINING",
+          "page": 6,
+          "row": 2,
+          "sourceQuantity": 6,
+          "sourceDescription": "Herman Dining Chair Wood W475mm x D460mm x H755mm",
+          "sourceFinish": "Finish: Natural Oak",
+          "sourceLocation": "Tea point",
+          "sourceOption": false
+        },
+        {
+          "productId": "PDF-HERMAN-DINING",
+          "page": 6,
+          "row": 7,
+          "sourceQuantity": 2,
+          "sourceDescription": "Herman Dining Chair Wood W475mm x D460mm x H755mm",
+          "sourceFinish": "Finish: Natural Oak",
+          "sourceLocation": "Tea point",
+          "sourceOption": false
+        }
+      ],
+      "standardizedFinish": "Carvalho natural, conforme o PDF.",
+      "finish": "Carvalho natural, conforme o PDF.",
+      "finishStatus": "source",
+      "adaptationNotes": "Default for mapped dining chairs. Repeated source rows describe the same model.",
+      "description": "Carvalho natural, conforme o PDF. Default for mapped dining chairs. Repeated source rows describe the same model.",
+      "location": "LOUNGE"
+    },
+    {
+      "id": "PDF-PLATFORM",
+      "name": "Cadeira Platform",
+      "category": "Furniture",
+      "group": "Cadeira da copa",
+      "role": "dining_chair",
+      "image": "/catalog/moodboard-1-pdf/platform.png",
+      "imageRole": "source_product",
+      "approved": true,
+      "sourceKind": "pdf",
+      "sourceModel": "Platform side chair",
+      "manufacturer": "Não informado no PDF",
+      "supplier": "Cirque Furniture — fornecedor indicado no documento",
+      "roomIds": [
+        "PRISMAL_LOUNGE"
+      ],
+      "planModelIds": [
+        "CAD-05"
+      ],
+      "sourceDimensions": {
+        "widthMm": 525,
+        "depthMm": 535,
+        "heightMm": 770
+      },
+      "sourceQuantity": 6,
+      "sourceOccurrences": [
+        {
+          "productId": "PDF-PLATFORM",
+          "page": 6,
+          "row": 3,
+          "sourceQuantity": 6,
+          "sourceDescription": "Platform side chair W525mm x D535mm x H770mm",
+          "sourceFinish": "Finish: Frame: Black Seat and back: Natural Ash",
+          "sourceLocation": "Tea point",
+          "sourceOption": true
+        }
+      ],
+      "standardizedFinish": "Assento e encosto em freixo natural, estrutura preta.",
+      "finish": "Assento e encosto em freixo natural, estrutura preta.",
+      "finishStatus": "source",
+      "adaptationNotes": "Alternative to Herman, not additional seating.",
+      "description": "Assento e encosto em freixo natural, estrutura preta. Alternative to Herman, not additional seating.",
+      "location": "LOUNGE"
+    },
+    {
+      "id": "PDF-BEE-SEAT",
+      "name": "Banco estofado Bee Fluted",
+      "category": "Furniture",
+      "group": "Banco de booth",
+      "role": "booth_seat",
+      "image": "/catalog/moodboard-1-pdf/bee-seat.png",
+      "imageRole": "source_product",
+      "approved": true,
+      "sourceKind": "pdf",
+      "sourceModel": "Bee Fluted - 2.5 seater sofa",
+      "manufacturer": "Não informado no PDF",
+      "supplier": "Cirque Furniture — fornecedor indicado no documento",
+      "roomIds": [
+        "PRISMAL_LOUNGE"
+      ],
+      "planModelIds": [
+        "BAN-01"
+      ],
+      "sourceDimensions": {
+        "widthMm": 1500,
+        "depthMm": 730,
+        "heightMm": 815
+      },
+      "sourceQuantity": 4,
+      "sourceOccurrences": [
+        {
+          "productId": "PDF-BEE-SEAT",
+          "page": 6,
+          "row": 4,
+          "sourceQuantity": 4,
+          "sourceDescription": "Bee Fluted - 2.5 seater sofa W1500mm x D730mm x H815mm",
+          "sourceFinish": "Finish: Upholstery: band 2 Base: Black",
+          "sourceLocation": "Tea point",
+          "sourceOption": false
+        }
+      ],
+      "standardizedFinish": "Estofado cinza médio e base preta; cor proposta para Band 2.",
+      "finish": "Estofado cinza médio e base preta; cor proposta para Band 2.",
+      "finishStatus": "proposed",
+      "adaptationNotes": "Source photograph contains a complete booth and plants. Use ONLY the bench component: four existing benches, no added planters.",
+      "description": "Estofado cinza médio e base preta; cor proposta para Band 2. Source photograph contains a complete booth and plants. Use ONLY the bench component: four existing benches, no added planters.",
+      "location": "LOUNGE"
+    },
+    {
+      "id": "PDF-BEE-TABLE",
+      "name": "Mesa e laterais Bee",
+      "category": "Furniture",
+      "group": "Mesa de booth",
+      "role": "booth_table",
+      "image": "/catalog/moodboard-1-pdf/bee-table.png",
+      "imageRole": "source_product",
+      "approved": true,
+      "sourceKind": "pdf",
+      "sourceModel": "Bee - tabel and side elemtns",
+      "manufacturer": "Não informado no PDF",
+      "supplier": "Cirque Furniture — fornecedor indicado no documento",
+      "roomIds": [
+        "PRISMAL_LOUNGE"
+      ],
+      "planModelIds": [
+        "MES-10"
+      ],
+      "sourceDimensions": {
+        "widthMm": 2100,
+        "depthMm": 1500,
+        "heightMm": 735
+      },
+      "sourceQuantity": 2,
+      "sourceOccurrences": [
+        {
+          "productId": "PDF-BEE-TABLE",
+          "page": 6,
+          "row": 5,
+          "sourceQuantity": 2,
+          "sourceDescription": "Bee - tabel and side elemtns W2100mm x D1500mm x H735mm",
+          "sourceFinish": "Finish: Tabel top: MFC Uphoslter: band 2",
+          "sourceLocation": "Tea point",
+          "sourceOption": false
+        }
+      ],
+      "standardizedFinish": "Tampo carvalho claro e laterais cinza médio; proposta para MFC e Band 2.",
+      "finish": "Tampo carvalho claro e laterais cinza médio; proposta para MFC e Band 2.",
+      "finishStatus": "proposed",
+      "adaptationNotes": "2100 × 1500 mm describes the assembly. Do not force assembly dimensions onto each tabletop or duplicate seating.",
+      "description": "Tampo carvalho claro e laterais cinza médio; proposta para MFC e Band 2. 2100 × 1500 mm describes the assembly. Do not force assembly dimensions onto each tabletop or duplicate seating.",
+      "location": "LOUNGE"
+    },
+    {
+      "id": "PDF-LOCH",
+      "name": "Conjunto de booth Loch · 4 lugares",
+      "category": "Furniture",
+      "group": "Alternativa de booth",
+      "role": "booth_system",
+      "image": "/catalog/moodboard-1-pdf/loch.png",
+      "imageRole": "source_product",
+      "approved": true,
+      "sourceKind": "pdf",
+      "sourceModel": "Loch - Booth 4 Seater Dinette",
+      "manufacturer": "Não informado no PDF",
+      "supplier": "Cirque Furniture — fornecedor indicado no documento",
+      "roomIds": [
+        "PRISMAL_LOUNGE"
+      ],
+      "planModelIds": [
+        "BAN-01",
+        "MES-10"
+      ],
+      "sourceDimensions": {
+        "widthMm": 2190,
+        "depthMm": 1520,
+        "heightMm": 790
+      },
+      "sourceQuantity": 2,
+      "sourceOccurrences": [
+        {
+          "productId": "PDF-LOCH",
+          "page": 6,
+          "row": 6,
+          "sourceQuantity": 2,
+          "sourceDescription": "Loch - Booth 4 Seater Dinette W2190mm x D1520mm x H790mm",
+          "sourceFinish": "Finish: Upholstery: TBC Table top: Oak MFC Base: Black",
+          "sourceLocation": "Tea point",
+          "sourceOption": true
+        }
+      ],
+      "standardizedFinish": "Tampo carvalho, base preta e estofado cinza médio proposto para TBC.",
+      "finish": "Tampo carvalho, base preta e estofado cinza médio proposto para TBC.",
+      "finishStatus": "proposed",
+      "adaptationNotes": "Alternative system: replace only the appearance of existing benches and tables, one component per mapped instance.",
+      "description": "Tampo carvalho, base preta e estofado cinza médio proposto para TBC. Alternative system: replace only the appearance of existing benches and tables, one component per mapped instance.",
+      "location": "LOUNGE"
+    },
+    {
+      "id": "PDF-HERMAN-LOUNGE",
+      "name": "Poltrona Herman Lounge",
+      "category": "Furniture",
+      "group": "Poltrona de convivência",
+      "role": "armchair",
+      "image": "/catalog/moodboard-1-pdf/herman-lounge.png",
+      "imageRole": "source_product",
+      "approved": true,
+      "sourceKind": "pdf",
+      "sourceModel": "Herman Lounge",
+      "manufacturer": "Não informado no PDF",
+      "supplier": "Cirque Furniture — fornecedor indicado no documento",
+      "roomIds": [
+        "PRISMAL_LOUNGE"
+      ],
+      "planModelIds": [
+        "POL-02"
+      ],
+      "sourceDimensions": {
+        "widthMm": 725,
+        "depthMm": 645,
+        "heightMm": 710
+      },
+      "sourceQuantity": 2,
+      "sourceOccurrences": [
+        {
+          "productId": "PDF-HERMAN-LOUNGE",
+          "page": 7,
+          "row": 1,
+          "sourceQuantity": 2,
+          "sourceDescription": "Herman Lounge W725mm x D645mm x H710mm",
+          "sourceFinish": "Finish: Upholstery: Wool Boucle Base: Natural Oak",
+          "sourceLocation": "Tea point",
+          "sourceOption": false
+        }
+      ],
+      "standardizedFinish": "Bouclé de lã claro e base em carvalho natural.",
+      "finish": "Bouclé de lã claro e base em carvalho natural.",
+      "finishStatus": "source",
+      "adaptationNotes": "Only if a lounge seat is already mapped; do not insert seats to match source quantity.",
+      "description": "Bouclé de lã claro e base em carvalho natural. Only if a lounge seat is already mapped; do not insert seats to match source quantity.",
+      "location": "LOUNGE"
+    },
+    {
+      "id": "PDF-MENDOZA",
+      "name": "Poltrona Mendoza",
+      "category": "Furniture",
+      "group": "Poltrona de convivência",
+      "role": "armchair",
+      "image": "/catalog/moodboard-1-pdf/mendoza.png",
+      "imageRole": "source_product",
+      "approved": true,
+      "sourceKind": "pdf",
+      "sourceModel": "Mendoza Armchair",
+      "manufacturer": "Não informado no PDF",
+      "supplier": "Cirque Furniture — fornecedor indicado no documento",
+      "roomIds": [
+        "PRISMAL_LOUNGE"
+      ],
+      "planModelIds": [
+        "POL-02"
+      ],
+      "sourceDimensions": {
+        "widthMm": 600,
+        "depthMm": 700,
+        "heightMm": 780
+      },
+      "sourceQuantity": 2,
+      "sourceOccurrences": [
+        {
+          "productId": "PDF-MENDOZA",
+          "page": 7,
+          "row": 2,
+          "sourceQuantity": 2,
+          "sourceDescription": "Mendoza Armchair W600mm x D700mm x H780mm",
+          "sourceFinish": "Finish: Upholstery: Band 3 Frame: Black",
+          "sourceLocation": "Tea point",
+          "sourceOption": true
+        }
+      ],
+      "standardizedFinish": "Tecido creme e estrutura preta; cor proposta para Band 3.",
+      "finish": "Tecido creme e estrutura preta; cor proposta para Band 3.",
+      "finishStatus": "proposed",
+      "adaptationNotes": "Alternative to Herman Lounge, not additional seating.",
+      "description": "Tecido creme e estrutura preta; cor proposta para Band 3. Alternative to Herman Lounge, not additional seating.",
+      "location": "LOUNGE"
+    },
+    {
+      "id": "PDF-COFFEE-600",
+      "name": "Mesa baixa de convivência · Ø 600 mm",
+      "category": "Furniture",
+      "group": "Mesa de apoio grande",
+      "role": "coffee_table",
+      "image": "/catalog/moodboard-1-pdf/coffee-600.png",
+      "imageRole": "source_product",
+      "approved": true,
+      "sourceKind": "pdf",
+      "sourceModel": "New - Round Dining table",
+      "manufacturer": "Não informado no PDF",
+      "supplier": "Cirque Furniture — fornecedor indicado no documento",
+      "roomIds": [
+        "PRISMAL_LOUNGE"
+      ],
+      "planModelIds": [
+        "MES-08"
+      ],
+      "sourceDimensions": {
+        "diameterMm": 600,
+        "heightMm": 425
+      },
+      "sourceQuantity": 2,
+      "sourceOccurrences": [
+        {
+          "productId": "PDF-COFFEE-600",
+          "page": 7,
+          "row": 4,
+          "sourceQuantity": 2,
+          "sourceDescription": "New - Round Dining table D600mm x H425mm Pedestal base",
+          "sourceFinish": "Finish: Top: Oak Frame: Black",
+          "sourceLocation": "Tea point",
+          "sourceOption": false
+        }
+      ],
+      "standardizedFinish": "Tampo carvalho e base preta, conforme texto do PDF.",
+      "finish": "Tampo carvalho e base preta, conforme texto do PDF.",
+      "finishStatus": "source",
+      "adaptationNotes": "Source calls it Dining table but states H425 mm; normalize as LOW table, not a dining or work table.",
+      "description": "Tampo carvalho e base preta, conforme texto do PDF. Source calls it Dining table but states H425 mm; normalize as LOW table, not a dining or work table.",
+      "location": "LOUNGE"
+    },
+    {
+      "id": "PDF-PEDESTAL",
+      "name": "Gaveteiro Note · 3 gavetas",
+      "category": "Joinery",
+      "group": "Gaveteiro",
+      "role": "storage",
+      "image": "/catalog/moodboard-1-pdf/pedestal.png",
+      "imageRole": "source_product",
+      "approved": true,
+      "sourceKind": "pdf",
+      "sourceModel": "Note Pedestals",
+      "manufacturer": "Não informado no PDF",
+      "supplier": "Cirque Furniture — fornecedor indicado no documento",
+      "roomIds": [
+        "PRISMAL_WORK_WEST",
+        "PRISMAL_EXECUTIVE"
+      ],
+      "planModelIds": [],
+      "sourceDimensions": {
+        "widthMm": 420,
+        "depthMm": 564,
+        "heightMm": 565
+      },
+      "sourceQuantity": 25,
+      "sourceOccurrences": [
+        {
+          "productId": "PDF-PEDESTAL",
+          "page": 8,
+          "row": 1,
+          "sourceQuantity": 25,
+          "sourceDescription": "Note Pedestals W420mm x D564mm x H565mm 2 x Stationary Drawers, 1 x Filing Drawer",
+          "sourceFinish": "Finish: Black",
+          "sourceLocation": "open plan & Office",
+          "sourceOption": false
+        }
+      ],
+      "standardizedFinish": "Preto, conforme o PDF.",
+      "finish": "Preto, conforme o PDF.",
+      "finishStatus": "source",
+      "adaptationNotes": "25 quoted units are source information, not authority to add visible units absent from plan.",
+      "description": "Preto, conforme o PDF. 25 quoted units are source information, not authority to add visible units absent from plan.",
+      "location": "WORK_WEST, EXECUTIVE"
+    },
+    {
+      "id": "PDF-HOT-DESK",
+      "name": "Mesa colaborativa · 6 postos",
+      "category": "Furniture",
+      "group": "Mesa colaborativa",
+      "role": "desk",
+      "image": "/catalog/moodboard-1-pdf/hot-desk.png",
+      "imageRole": "source_product",
+      "approved": true,
+      "sourceKind": "pdf",
+      "sourceModel": "Hot Desk - Work bench - 6p",
+      "manufacturer": "Não informado no PDF",
+      "supplier": "Cirque Furniture — fornecedor indicado no documento",
+      "roomIds": [
+        "PRISMAL_TEAM"
+      ],
+      "planModelIds": [
+        "MES-02"
+      ],
+      "sourceDimensions": {
+        "widthMm": 3200,
+        "depthMm": 1440,
+        "heightMm": 735
+      },
+      "sourceQuantity": 1,
+      "sourceOccurrences": [
+        {
+          "productId": "PDF-HOT-DESK",
+          "page": 8,
+          "row": 2,
+          "sourceQuantity": 1,
+          "sourceDescription": "Hot Desk - Work bench - 6p W3200mm x D1440mm x H735mm",
+          "sourceFinish": "Finish: Top: MFC, TBC Frame: Black",
+          "sourceLocation": "Hot desk in open plan",
+          "sourceOption": false
+        }
+      ],
+      "standardizedFinish": "Tampo carvalho claro e estrutura preta; proposta para MFC TBC.",
+      "finish": "Tampo carvalho claro e estrutura preta; proposta para MFC TBC.",
+      "finishStatus": "proposed",
+      "adaptationNotes": "One mapped shared table system, six existing chairs. Keep central equipment and layout.",
+      "description": "Tampo carvalho claro e estrutura preta; proposta para MFC TBC. One mapped shared table system, six existing chairs. Keep central equipment and layout.",
+      "location": "TEAM"
+    },
+    {
+      "id": "PDF-BENCH-4",
+      "name": "Estação compartilhada · 4 postos",
+      "category": "Furniture",
+      "group": "Tampo de trabalho",
+      "role": "desk",
+      "image": "/catalog/moodboard-1-pdf/bench-4.png",
+      "imageRole": "source_product",
+      "approved": true,
+      "sourceKind": "pdf",
+      "sourceModel": "Work bench - 4p",
+      "manufacturer": "Não informado no PDF",
+      "supplier": "Cirque Furniture — fornecedor indicado no documento",
+      "roomIds": [
+        "PRISMAL_WORK_WEST"
+      ],
+      "planModelIds": [
+        "MES-01"
+      ],
+      "sourceDimensions": {
+        "widthMm": 2800,
+        "depthMm": 1640,
+        "heightMm": 735
+      },
+      "sourceQuantity": 4,
+      "sourceOccurrences": [
+        {
+          "productId": "PDF-BENCH-4",
+          "page": 8,
+          "row": 7,
+          "sourceQuantity": 4,
+          "sourceDescription": "Work bench - 4p W2800mm x D1640mm x H735mm Each worktop 1400mm x 800mm",
+          "sourceFinish": "Finish: Top: MFC, TBC Frame: Black / White",
+          "sourceLocation": "open plan",
+          "sourceOption": false
+        }
+      ],
+      "standardizedFinish": "Tampo carvalho claro e estrutura preta; proposta para MFC TBC.",
+      "finish": "Tampo carvalho claro e estrutura preta; proposta para MFC TBC.",
+      "finishStatus": "proposed",
+      "adaptationNotes": "Use one 1400 × 800 mm worktop module per mapped MES-01 instance. Never add an entire 4-person bench at each instance.",
+      "description": "Tampo carvalho claro e estrutura preta; proposta para MFC TBC. Use one 1400 × 800 mm worktop module per mapped MES-01 instance. Never add an entire 4-person bench at each instance.",
+      "location": "WORK_WEST"
+    },
+    {
+      "id": "PDF-SCREEN",
+      "name": "Painel acústico de mesa",
+      "category": "Accessory",
+      "group": "Painel de mesa",
+      "role": "desk_screen",
+      "image": "/catalog/moodboard-1-pdf/screen.png",
+      "imageRole": "source_product",
+      "approved": true,
+      "sourceKind": "pdf",
+      "sourceModel": "Frameless fabric trimmed screen",
+      "manufacturer": "Não informado no PDF",
+      "supplier": "Cirque Furniture — fornecedor indicado no documento",
+      "roomIds": [
+        "PRISMAL_WORK_WEST"
+      ],
+      "planModelIds": [],
+      "sourceDimensions": {
+        "widthMm": 1400,
+        "depthMm": 20,
+        "heightMm": 350
+      },
+      "sourceQuantity": 12,
+      "sourceOccurrences": [
+        {
+          "productId": "PDF-SCREEN",
+          "page": 8,
+          "row": 8,
+          "sourceQuantity": 8,
+          "sourceDescription": "Frameless fabric trimmed screen W1400mm x D20mm x H350mm",
+          "sourceFinish": "Finish: Band A",
+          "sourceLocation": "open plan",
+          "sourceOption": false
+        },
+        {
+          "productId": "PDF-SCREEN",
+          "page": 9,
+          "row": 4,
+          "sourceQuantity": 4,
+          "sourceDescription": "Frameless fabric trimmed screen W1400mm x D20mm x H350mm",
+          "sourceFinish": "Finish: Band A",
+          "sourceLocation": "open plan",
+          "sourceOption": false
+        }
+      ],
+      "standardizedFinish": "Cinza médio conforme imagem; Band A é faixa de tecido, não cor.",
+      "finish": "Cinza médio conforme imagem; Band A é faixa de tecido, não cor.",
+      "finishStatus": "source",
+      "adaptationNotes": "Apply only at existing desk screen locations; preserve monitors and sightlines.",
+      "description": "Cinza médio conforme imagem; Band A é faixa de tecido, não cor. Apply only at existing desk screen locations; preserve monitors and sightlines.",
+      "location": "WORK_WEST"
+    },
+    {
+      "id": "PDF-BENCH-8",
+      "name": "Estação compartilhada · 8 postos",
+      "category": "Furniture",
+      "group": "Tampo de trabalho",
+      "role": "desk",
+      "image": "/catalog/moodboard-1-pdf/bench-8.png",
+      "imageRole": "source_product",
+      "approved": true,
+      "sourceKind": "pdf",
+      "sourceModel": "Work bench - 8p",
+      "manufacturer": "Não informado no PDF",
+      "supplier": "Cirque Furniture — fornecedor indicado no documento",
+      "roomIds": [
+        "PRISMAL_WORK_WEST"
+      ],
+      "planModelIds": [
+        "MES-01"
+      ],
+      "sourceDimensions": {
+        "widthMm": 5600,
+        "depthMm": 1640,
+        "heightMm": 735
+      },
+      "sourceQuantity": 1,
+      "sourceOccurrences": [
+        {
+          "productId": "PDF-BENCH-8",
+          "page": 9,
+          "row": 3,
+          "sourceQuantity": 1,
+          "sourceDescription": "Work bench - 8p W5600mm x D1640mm x H735mm Each worktop 1400mm x 800mm",
+          "sourceFinish": "Finish: Top: MFC, TBC Frame: Black / White",
+          "sourceLocation": "open plan",
+          "sourceOption": false
+        }
+      ],
+      "standardizedFinish": "Tampo carvalho claro e estrutura preta; proposta para MFC TBC.",
+      "finish": "Tampo carvalho claro e estrutura preta; proposta para MFC TBC.",
+      "finishStatus": "proposed",
+      "adaptationNotes": "Source photo repeats the bench illustration. Use one worktop module per mapped instance; grouping/count always follows plan.",
+      "description": "Tampo carvalho claro e estrutura preta; proposta para MFC TBC. Source photo repeats the bench illustration. Use one worktop module per mapped instance; grouping/count always follows plan.",
+      "location": "WORK_WEST"
+    },
+    {
+      "id": "PDF-PLANTER-STORAGE",
+      "name": "Armário baixo com floreira",
+      "category": "Joinery",
+      "group": "Armário com floreira",
+      "role": "storage",
+      "image": "/catalog/moodboard-1-pdf/planter-storage.png",
+      "imageRole": "source_product",
+      "approved": true,
+      "sourceKind": "pdf",
+      "sourceModel": "End of desk storage with planters",
+      "manufacturer": "Não informado no PDF",
+      "supplier": "Cirque Furniture — fornecedor indicado no documento",
+      "roomIds": [
+        "PRISMAL_WORK_WEST",
+        "PRISMAL_TEAM"
+      ],
+      "planModelIds": [
+        "SUP-02"
+      ],
+      "sourceDimensions": {
+        "widthMm": 1600,
+        "depthMm": 500,
+        "heightMm": 890
+      },
+      "sourceQuantity": 2,
+      "sourceOccurrences": [
+        {
+          "productId": "PDF-PLANTER-STORAGE",
+          "page": 9,
+          "row": 7,
+          "sourceQuantity": 2,
+          "sourceDescription": "End of desk storage with planters W1600mm x D500mm x H890mm 4-door cupboard with 2x adjustable shelve and black square handles. Including planter Liners are not included and plants not included",
+          "sourceFinish": "Finish: MFC - TBC",
+          "sourceLocation": "open plan - Hot desk in open plan",
+          "sourceOption": false
+        }
+      ],
+      "standardizedFinish": "Armário cinza grafite e floreira preta; proposta para MFC TBC.",
+      "finish": "Armário cinza grafite e floreira preta; proposta para MFC TBC.",
+      "finishStatus": "proposed",
+      "adaptationNotes": "Plants and liners are excluded in the quote. Preserve only planting already shown in plan.",
+      "description": "Armário cinza grafite e floreira preta; proposta para MFC TBC. Plants and liners are excluded in the quote. Preserve only planting already shown in plan.",
+      "location": "WORK_WEST, TEAM"
+    },
+    {
+      "id": "PDF-COAT-CUPBOARD",
+      "name": "Armário de apoio · 1.800 mm",
+      "category": "Joinery",
+      "group": "Armário de entrada",
+      "role": "storage",
+      "image": "/catalog/moodboard-1-pdf/coat-cupboard.png",
+      "imageRole": "source_product",
+      "approved": true,
+      "sourceKind": "pdf",
+      "sourceModel": "Coat cupboard",
+      "manufacturer": "Não informado no PDF",
+      "supplier": "Cirque Furniture — fornecedor indicado no documento",
+      "roomIds": [
+        "PRISMAL_RECEPTION"
+      ],
+      "planModelIds": [
+        "SUP-02"
+      ],
+      "sourceDimensions": {
+        "widthMm": 1000,
+        "depthMm": 600,
+        "heightMm": 1800
+      },
+      "sourceQuantity": 1,
+      "sourceOccurrences": [
+        {
+          "productId": "PDF-COAT-CUPBOARD",
+          "page": 10,
+          "row": 1,
+          "sourceQuantity": 1,
+          "sourceDescription": "Coat cupboard W1000mm x D600mm x H1800mm",
+          "sourceFinish": "Finish: MFC - TBC",
+          "sourceLocation": "Entrance",
+          "sourceOption": false
+        }
+      ],
+      "standardizedFinish": "Carvalho claro com detalhes pretos; proposta para MFC TBC.",
+      "finish": "Carvalho claro com detalhes pretos; proposta para MFC TBC.",
+      "finishStatus": "proposed",
+      "adaptationNotes": "Diagram only; do not infer hidden construction details. Only where existing storage is mapped.",
+      "description": "Carvalho claro com detalhes pretos; proposta para MFC TBC. Diagram only; do not infer hidden construction details. Only where existing storage is mapped.",
+      "location": "RECEPTION"
+    },
+    {
+      "id": "PDF-TALL-STORAGE",
+      "name": "Armário alto · escritório",
+      "category": "Joinery",
+      "group": "Armário alto",
+      "role": "storage",
+      "image": "/catalog/moodboard-1-pdf/tall-storage.png",
+      "imageRole": "source_product",
+      "approved": true,
+      "sourceKind": "pdf",
+      "sourceModel": "Full height storage",
+      "manufacturer": "Não informado no PDF",
+      "supplier": "Cirque Furniture — fornecedor indicado no documento",
+      "roomIds": [
+        "PRISMAL_WORK_WEST",
+        "PRISMAL_TEAM"
+      ],
+      "planModelIds": [
+        "SUP-02"
+      ],
+      "sourceDimensions": {
+        "widthMm": 1000,
+        "depthMm": 450,
+        "heightMm": 1800
+      },
+      "sourceQuantity": 6,
+      "sourceOccurrences": [
+        {
+          "productId": "PDF-TALL-STORAGE",
+          "page": 10,
+          "row": 2,
+          "sourceQuantity": 6,
+          "sourceDescription": "Full height storage W1000mm x D450mm x H1800mm",
+          "sourceFinish": "Finish: MFC - TBC",
+          "sourceLocation": "open plan - Hot desk in open plan Off-site storage of existing product",
+          "sourceOption": false
+        }
+      ],
+      "standardizedFinish": "Carvalho claro com detalhes pretos; proposta para MFC TBC.",
+      "finish": "Carvalho claro com detalhes pretos; proposta para MFC TBC.",
+      "finishStatus": "proposed",
+      "adaptationNotes": "Same source sketch as coat cupboard but distinct 450 mm depth. Keep the size variants separate.",
+      "description": "Carvalho claro com detalhes pretos; proposta para MFC TBC. Same source sketch as coat cupboard but distinct 450 mm depth. Keep the size variants separate.",
+      "location": "WORK_WEST, TEAM"
+    }
+  ],
+  "rules": [
+    "A planta baixa, seus contornos editados e as instâncias atuais definem posição, função, quantidade e orientação dos móveis.",
+    "A planta de teto e a planta cotada são obrigatórias; suas geometrias e cotas prevalecem sobre dimensões nominais do catálogo.",
+    "Não aplicar quantidades comerciais à planta. Alternativas substituem referências, nunca acrescentam instâncias.",
+    "Acabamentos TBC, Band 2, Band 3 e Band A não são cores confirmadas. As escolhas nesses campos são propostas de projeto.",
+    "Permissão do usuário: adaptar ou criar um modelo coerente quando a referência não couber na função ou no contorno existente; identificar isso como proposta sem fabricante.",
+    "Cadastros manuais específicos do usuário prevalecem sobre os padrões deste catálogo.",
+    "Fotografias de conjuntos orientam somente o componente vinculado. Não copiar mobiliário, plantas ou equipamentos adicionais da foto.",
+    "O texto explícito do acabamento prevalece sobre a foto quando divergir, como nas bases pretas das mesas de apoio.",
+    "Itens sem instância compatível permanecem disponíveis no catálogo, sem inclusão automática na planta."
+  ],
+  "externalDelivery": "pending_approval"
+}

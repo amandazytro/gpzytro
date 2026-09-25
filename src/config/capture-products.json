@@ -1,0 +1,264 @@
+{
+  "name": "PDF atual, capturas e criações originais",
+  "products": [
+    {
+      "id": "CAP-STORAGE",
+      "name": "Armário deslizante com jardineiras",
+      "category": "Furniture",
+      "group": "Armário deslizante com jardineiras",
+      "role": "storage",
+      "image": "/catalog/captures-2026-09-24/150038.png",
+      "imageRole": "source_product",
+      "sourceKind": "capture",
+      "sourceModel": "Não identificado",
+      "manufacturer": "Não confirmado na captura",
+      "approved": true,
+      "planModelIds": [
+        "ARM-CAP-01"
+      ],
+      "roomIds": [
+        "PRISMAL_WORK_WEST",
+        "PRISMAL_TEAM"
+      ],
+      "sourceDimensions": {
+        "widthMm": 1600,
+        "depthMm": 430,
+        "heightMm": 740,
+        "planterHeightMm": 200
+      },
+      "standardizedFinish": "Carvalho branqueado; portas e puxadores brancos. Jardineiras superiores no mesmo carvalho.",
+      "finishStatus": "source",
+      "adaptationNotes": "Armário de fim de bancada, portas de correr com fechadura e duas jardineiras por unidade. A captura exclui plantas e caixa interna. Aplicar apenas ao contorno do armário existente; não criar seis unidades pela quantidade do documento.",
+      "description": "Armário de fim de bancada, portas de correr com fechadura e duas jardineiras por unidade. A captura exclui plantas e caixa interna. Aplicar apenas ao contorno do armário existente; não criar seis unidades pela quantidade do documento.",
+      "sourceCapture": {
+        "fileName": "Captura de tela 2026-09-24 150038.png",
+        "url": "/catalog/captures-2026-09-24/150038.png",
+        "sha256": "e041cbb2c775e5cdd0bc94aae3ac414964bb71c0d8b66cbcb343535b7354fd15"
+      },
+      "sourceQuantity": 6
+    },
+    {
+      "id": "CAP-MEETING-CHAIR",
+      "name": "Cadeira giratória Tonal",
+      "category": "Furniture",
+      "group": "Cadeira giratória Tonal",
+      "role": "meeting_chair",
+      "image": "/catalog/captures-2026-09-24/150042.png",
+      "imageRole": "source_product",
+      "sourceKind": "capture",
+      "sourceModel": "Não identificado",
+      "manufacturer": "Não confirmado na captura",
+      "approved": true,
+      "planModelIds": [
+        "CAD-CAP-01"
+      ],
+      "roomIds": [
+        "PRISMAL_MEETING_1",
+        "PRISMAL_HUDDLE_1",
+        "PRISMAL_EXECUTIVE"
+      ],
+      "sourceDimensions": {},
+      "standardizedFinish": "Gabriel Tonal 2490-61317 conforme amostra; base preta.",
+      "finishStatus": "source",
+      "adaptationNotes": "Cadeira totalmente estofada com braços e base giratória. O texto e a amostra prevalecem sobre a foto terracota com base clara. Gabriel identifica o tecido, não o fabricante da cadeira.",
+      "description": "Cadeira totalmente estofada com braços e base giratória. O texto e a amostra prevalecem sobre a foto terracota com base clara. Gabriel identifica o tecido, não o fabricante da cadeira.",
+      "sourceCapture": {
+        "fileName": "Captura de tela 2026-09-24 150042.png",
+        "url": "/catalog/captures-2026-09-24/150042.png",
+        "sha256": "2f3e24ece838cbc186a475c049e238558c3e8c6ce7ff3da84dd01a585f450413"
+      },
+      "sourceQuantity": 6
+    },
+    {
+      "id": "CAP-GRAY-LOUNGE",
+      "name": "Poltrona envolvente cinza",
+      "category": "Furniture",
+      "group": "Poltrona envolvente cinza",
+      "role": "armchair",
+      "image": "/catalog/captures-2026-09-24/150052.png",
+      "imageRole": "source_product",
+      "sourceKind": "capture",
+      "sourceModel": "Não identificado",
+      "manufacturer": "Não confirmado na captura",
+      "approved": true,
+      "planModelIds": [
+        "POL-CAP-01"
+      ],
+      "roomIds": [
+        "PRISMAL_WAITING",
+        "PRISMAL_LOUNGE"
+      ],
+      "sourceDimensions": {
+        "widthMm": 890,
+        "depthMm": 735,
+        "heightMm": 780,
+        "seatHeightMm": 385
+      },
+      "standardizedFinish": "Camira Synergy LDS08, cinza claro conforme amostra.",
+      "finishStatus": "source",
+      "adaptationNotes": "Poltrona cinza da captura junto às mesas baixas da convivência e nas duas posições de espera. A quantidade da captura não limita a distribuição solicitada; medidas nominais exigem compatibilização ao contorno. Camira identifica o tecido, não o fabricante.",
+      "description": "Poltrona estofada com encosto envolvente e braços integrados, instalada nas duas posições de espera. Camira identifica o tecido. Medidas nominais da captura; preservar passagem e contorno.",
+      "sourceCapture": {
+        "fileName": "Captura de tela 2026-09-24 150052.png",
+        "url": "/catalog/captures-2026-09-24/150052.png",
+        "sha256": "ccfe15df43b21ed455059f7d666a6ace9d3fca67f61b87f50e33f2c355d886fa"
+      },
+      "sourceQuantity": 2
+    },
+    {
+      "id": "CAP-BLACK-TABLE",
+      "name": "Mesa de centro preta Ø600",
+      "category": "Furniture",
+      "group": "Mesa de centro preta Ø600",
+      "role": "coffee_table",
+      "image": "/catalog/captures-2026-09-24/150104.png",
+      "imageRole": "source_product",
+      "sourceKind": "capture",
+      "sourceModel": "Não identificado",
+      "manufacturer": "Não confirmado na captura",
+      "approved": true,
+      "planModelIds": [
+        "MES-CAP-01"
+      ],
+      "roomIds": [
+        "PRISMAL_LOUNGE"
+      ],
+      "sourceDimensions": {
+        "diameterMm": 600,
+        "heightMm": 450
+      },
+      "standardizedFinish": "Madeira maciça preta RAL 9005.",
+      "finishStatus": "source",
+      "adaptationNotes": "Mesa circular baixa de quatro pernas, tampo com borda elevada. Substitui as duas mesas de apoio maiores da convivência, sem transformá-las em mesas de reunião.",
+      "description": "Mesa circular baixa de quatro pernas, tampo com borda elevada. Substitui as duas mesas de apoio maiores da convivência, sem transformá-las em mesas de reunião.",
+      "sourceCapture": {
+        "fileName": "Captura de tela 2026-09-24 150104.png",
+        "url": "/catalog/captures-2026-09-24/150104.png",
+        "sha256": "34eabd9706d6e62bc1c077cce766c3e7234218f43cbd1cf75825a51cbb811267"
+      }
+    },
+    {
+      "id": "CAP-PEDESTAL",
+      "name": "Mesa de pedestal creme",
+      "category": "Furniture",
+      "group": "Mesa de pedestal creme",
+      "role": "side_table",
+      "image": "/catalog/captures-2026-09-24/150136.png",
+      "imageRole": "source_product",
+      "sourceKind": "capture",
+      "sourceModel": "Não identificado",
+      "manufacturer": "Não confirmado na captura",
+      "approved": true,
+      "planModelIds": [
+        "MES-CAP-02"
+      ],
+      "roomIds": [
+        "PRISMAL_WAITING",
+        "PRISMAL_LOUNGE"
+      ],
+      "sourceDimensions": {},
+      "standardizedFinish": "Creme/areia fosco conforme aparência da captura; material não confirmado.",
+      "finishStatus": "source",
+      "adaptationNotes": "Referência visual das mesas de tampo circular e pedestal cilíndrico. Usar uma mesa por contorno, sem copiar vasos, louças ou duplicar o par da foto. Dimensões e fabricante não confirmados.",
+      "description": "Referência visual das mesas de tampo circular e pedestal cilíndrico. Usar uma mesa por contorno, sem copiar vasos, louças ou duplicar o par da foto. Dimensões e fabricante não confirmados.",
+      "sourceCapture": {
+        "fileName": "Captura de tela 2026-09-24 150136.png",
+        "url": "/catalog/captures-2026-09-24/150136.png",
+        "sha256": "e56d2021dfcd4b78c6f8dc8ce88de87ff745b3b95537ab644d10cb57f61de9bd"
+      }
+    },
+    {
+      "id": "FIC-DOBRA",
+      "name": "Bancada Dobra · criação fictícia",
+      "category": "Furniture",
+      "group": "Bancada Dobra · criação fictícia",
+      "role": "counter",
+      "image": "/catalog/original-designs/dobra.png",
+      "imageRole": "original_concept",
+      "sourceKind": "original",
+      "sourceModel": "Criação fictícia original",
+      "manufacturer": "Fictício · sem fabricante",
+      "approved": true,
+      "planModelIds": [
+        "SUP-FIC-01"
+      ],
+      "roomIds": [
+        "PRISMAL_LOUNGE"
+      ],
+      "standardizedFinish": "Freixo claro, tampo mineral marfim, puxadores e rodapé recuado grafite.",
+      "finishStatus": "proposed",
+      "adaptationNotes": "Desenho original criado do zero: bancada em L com frentes lisas, pega discreta, tampo contínuo com canto externo suave e cuba pequena no trecho longo. Uma única instância com duas partes; a posição final de cuba e instalações deve seguir a planta. Sem marca, fabricante ou dimensões comerciais inventadas.",
+      "description": "Desenho original criado do zero: bancada em L com frentes lisas, pega discreta, tampo contínuo com canto externo suave e cuba pequena no trecho longo. Uma única instância com duas partes; a posição final de cuba e instalações deve seguir a planta. Sem marca, fabricante ou dimensões comerciais inventadas."
+    },
+    {
+      "id": "FIC-NEXO",
+      "name": "Poltrona Nexo · criação fictícia",
+      "category": "Furniture",
+      "group": "Poltrona Nexo · criação fictícia",
+      "role": "armchair",
+      "image": "/catalog/original-designs/nexo.png",
+      "imageRole": "original_concept",
+      "sourceKind": "original",
+      "sourceModel": "Criação fictícia original",
+      "manufacturer": "Fictício · sem fabricante",
+      "approved": true,
+      "planModelIds": [
+        "POL-FIC-01"
+      ],
+      "roomIds": [
+        "PRISMAL_LOUNGE"
+      ],
+      "standardizedFinish": "Tecido tramado oliva acinzentado, estrutura tubular fina e pés grafite.",
+      "finishStatus": "proposed",
+      "adaptationNotes": "Alternativa fictícia original criada do zero, disponível para atribuição manual sem acrescentar assentos. Encosto independente arredondado, assento único, apoios estreitos e estrutura metálica leve. A poltrona das capturas tem prioridade nas posições atuais. Sem fabricante ou medidas reais presumidas.",
+      "description": "Alternativa fictícia original criada do zero, disponível para atribuição manual sem acrescentar assentos. Encosto independente arredondado, assento único, apoios estreitos e estrutura metálica leve. A poltrona das capturas tem prioridade nas posições atuais. Sem fabricante ou medidas reais presumidas."
+    },
+    {
+      "id": "FIC-ELO",
+      "name": "Sofá Elo modular em L · criação fictícia",
+      "category": "Furniture",
+      "group": "Sofá modular em L",
+      "role": "sofa",
+      "image": "/catalog/original-designs/elo.png",
+      "imageRole": "original_concept",
+      "sourceKind": "original",
+      "sourceModel": "Criação fictícia original",
+      "manufacturer": "Fictício · sem fabricante",
+      "approved": true,
+      "planModelIds": [
+        "SOF-FIC-01"
+      ],
+      "roomIds": [
+        "PRISMAL_LOUNGE"
+      ],
+      "standardizedFinish": "Tecido cinza-pedra claro, costuras modulares discretas e base recuada grafite.",
+      "finishStatus": "proposed",
+      "description": "Sofá modular fictício criado do zero: quatro módulos conceituais, sendo dois retos no trecho longo, um de canto e um reto no retorno. Encosto baixo, braços baixos nas pontas e base recuada. Sem reaproveitar o sofá azul ou moodboards antigos.",
+      "adaptationNotes": "Uma única instância em L com duas partes preserva o contorno existente. Ajustar a largura dos módulos ao contorno; a imagem não autoriza acrescentar área, assentos externos ou uma chaise. Quatro módulos são uma proposta, sem dimensões comerciais ou fabricante real."
+    },
+    {
+      "id": "FIC-TRAMA",
+      "name": "Balcão Trama · criação fictícia",
+      "category": "Furniture",
+      "group": "Balcão de apoio",
+      "role": "storage",
+      "image": "/catalog/original-designs/trama.png",
+      "imageRole": "original_concept",
+      "sourceKind": "original",
+      "sourceModel": "Criação fictícia original",
+      "manufacturer": "Fictício · sem fabricante",
+      "approved": true,
+      "planModelIds": [
+        "SUP-FIC-02"
+      ],
+      "roomIds": [
+        "PRISMAL_BOARDROOM",
+        "PRISMAL_MEETING_1"
+      ],
+      "standardizedFinish": "Tampo e laterais em freixo claro, frentes marfim fosco, puxadores recuados e pés grafite.",
+      "finishStatus": "proposed",
+      "description": "Balcão de apoio fictício criado do zero: três portas alinhadas, tampo fino de cantos suaves e pés metálicos baixos. Armazenamento fechado para material das salas de reunião; sem cuba ou jardineiras.",
+      "adaptationNotes": "Substitui as referências dos três balcões de apoio, mantendo contorno, posição e orientação. Modular as três frentes à largura disponível. Não deriva de moodboards antigos, não possui fabricante real nem medidas comerciais presumidas."
+    }
+  ]
+}

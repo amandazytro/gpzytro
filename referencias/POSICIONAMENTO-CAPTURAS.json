@@ -1,0 +1,31 @@
+{
+  "beforeRevision": "04422288cb5f64ef0fa2784a393c07b04a586fc058e617334e40946028a7664a",
+  "afterRevision": "986aaa042aa9e3128b4994d85b52b4a0d881baab39923d38175d9b6c7d1c9495",
+  "beforeCount": 115,
+  "afterCount": 115,
+  "protectedIds": [],
+  "changes": [
+    {
+      "instanceId": "instance-242524dd-a40c-415b-815c-84edad0a6f6c",
+      "code": "INST-242524DD",
+      "from": "SUP-02",
+      "to": "SUP-FIC-02",
+      "room": "PRISMAL_BOARDROOM"
+    },
+    {
+      "instanceId": "instance-ea0e094a-fa83-4a75-ae1c-ee5ac5884696",
+      "code": "INST-EA0E094A",
+      "from": "SUP-02",
+      "to": "SUP-FIC-02",
+      "room": "PRISMAL_BOARDROOM"
+    },
+    {
+      "instanceId": "instance-d6a05ae8-3cea-4e28-850f-a207d96ca296",
+      "code": "INST-D6A05AE8",
+      "from": "SUP-02",
+      "to": "SUP-FIC-02",
+      "room": "PRISMAL_MEETING_1"
+    }
+  ],
+  "merges": []
+}

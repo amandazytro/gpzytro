@@ -1,0 +1,244 @@
+{
+  "auditedAt": "2026-09-24T19:50:30.749Z",
+  "mode": "transport-captured-locally",
+  "actualExternalRequests": 0,
+  "modelAccessAndBillingTested": false,
+  "allLinkedToRenderProvider": true,
+  "exactArchitectureVerified": false,
+  "checks": {
+    "assignmentsExact": true,
+    "compositionExact": true,
+    "roomsExact": true
+  },
+  "renderCatalog": {
+    "status": "ready",
+    "externalDelivery": "authorized",
+    "products": 47
+  },
+  "instances": {
+    "local": 115,
+    "sent": 115,
+    "unmatched": 0,
+    "revision": "986aaa042aa9e3128b4994d85b52b4a0d881baab39923d38175d9b6c7d1c9495",
+    "areasRevision": "af7fbc0c6b8f3d5521e336ed5b310ca5cf1c02fcd90355860eeb46283a000788",
+    "referenceRevision": "2f4ac7b5cb32de26350e7aada4e5c08b69657ffd6736446c9c59dae612b7395a"
+  },
+  "mandatoryImages": [
+    {
+      "url": "/plans/floorplan-reference.png",
+      "exists": true,
+      "sha256": "a004e4219d424d463fef04b3b65ea8ee3d88addd711a410bc153b66b4b5d681f",
+      "includedInRequest": true
+    },
+    {
+      "url": "/plans/ceiling-page-1.png",
+      "exists": true,
+      "sha256": "2611b6ca205375baa6d9e295a2ef2d40080c2b8460709f2c6045151dc3990bb9",
+      "includedInRequest": true
+    },
+    {
+      "url": "/plans/dimensions-original.png",
+      "exists": true,
+      "sha256": "c6830fd45b9237e47e5ffe30bf0bbf97d60759bcbfd7628cef8bed3bf737939b",
+      "includedInRequest": true
+    },
+    {
+      "url": "/plans/dimensions-upper.png",
+      "exists": true,
+      "sha256": "624d52c5838b7dc6dba4e9a3801615f2521048ec4e98c3e89b83533dae8c2af3",
+      "includedInRequest": true
+    },
+    {
+      "url": "/plans/dimensions-lower.png",
+      "exists": true,
+      "sha256": "4d46abf5c15b281191835daa2b04663529e38a48ec3dc07ed0694847413dbd0b",
+      "includedInRequest": true
+    },
+    {
+      "url": "/plans/dimensions-schedule.png",
+      "exists": true,
+      "sha256": "2ae347e786c499361a59df5883164c40618e18c0a5b90c0818c490a495b0d93c",
+      "includedInRequest": true
+    },
+    {
+      "url": "/plans/dimensions-notes.png",
+      "exists": true,
+      "sha256": "7a2882c0e0c2bb9579b2187fa7cee7cc2f4d5bc91050f3592492ed19b99e931c",
+      "includedInRequest": true
+    }
+  ],
+  "selections": [
+    {
+      "productId": "CAP-STORAGE",
+      "image": "/catalog/captures-2026-09-24/150038.png",
+      "includedInRequest": true
+    },
+    {
+      "productId": "CAP-MEETING-CHAIR",
+      "image": "/catalog/captures-2026-09-24/150042.png",
+      "includedInRequest": true
+    },
+    {
+      "productId": "CAP-GRAY-LOUNGE",
+      "image": "/catalog/captures-2026-09-24/150052.png",
+      "includedInRequest": true
+    },
+    {
+      "productId": "CAP-BLACK-TABLE",
+      "image": "/catalog/captures-2026-09-24/150104.png",
+      "includedInRequest": true
+    },
+    {
+      "productId": "CAP-PEDESTAL",
+      "image": "/catalog/captures-2026-09-24/150136.png",
+      "includedInRequest": true
+    },
+    {
+      "productId": "FIC-DOBRA",
+      "image": "/catalog/original-designs/dobra.png",
+      "includedInRequest": true
+    },
+    {
+      "productId": "FIC-ELO",
+      "image": "/catalog/original-designs/elo.png",
+      "includedInRequest": true
+    },
+    {
+      "productId": "FIC-TRAMA",
+      "image": "/catalog/original-designs/trama.png",
+      "includedInRequest": true
+    },
+    {
+      "productId": "PDF-SKELF-4000",
+      "image": "/catalog/moodboard-1-pdf/skelf-4000.png",
+      "includedInRequest": true
+    },
+    {
+      "productId": "PDF-CENTRA-USB",
+      "image": "/catalog/moodboard-1-pdf/centra-usb.png",
+      "includedInRequest": true
+    },
+    {
+      "productId": "PDF-CENTRA-HDMI",
+      "image": "/catalog/moodboard-1-pdf/centra-hdmi.png",
+      "includedInRequest": true
+    },
+    {
+      "productId": "PDF-STARTER",
+      "image": "/catalog/moodboard-1-pdf/starter.png",
+      "includedInRequest": true
+    },
+    {
+      "productId": "PDF-INTERCONNECT",
+      "image": "/catalog/moodboard-1-pdf/interconnect.png",
+      "includedInRequest": true
+    },
+    {
+      "productId": "PDF-CABLE-SOCK",
+      "image": "/catalog/moodboard-1-pdf/no-image.png",
+      "includedInRequest": true
+    },
+    {
+      "productId": "PDF-BUTE",
+      "image": "/catalog/moodboard-1-pdf/bute.png",
+      "includedInRequest": true
+    },
+    {
+      "productId": "PDF-SKEF-1000",
+      "image": "/catalog/moodboard-1-pdf/skef-1000.png",
+      "includedInRequest": true
+    },
+    {
+      "productId": "PDF-ROUND-POWER",
+      "image": "/catalog/moodboard-1-pdf/round-power.png",
+      "includedInRequest": true
+    },
+    {
+      "productId": "PDF-SKEF-1400",
+      "image": "/catalog/moodboard-1-pdf/skef-1400.png",
+      "includedInRequest": true
+    },
+    {
+      "productId": "PDF-BLINKY",
+      "image": "/catalog/moodboard-1-pdf/blinky.png",
+      "includedInRequest": true
+    },
+    {
+      "productId": "PDF-EXISTING-ROUND",
+      "image": "/catalog/moodboard-1-pdf/existing-round.png",
+      "includedInRequest": true
+    },
+    {
+      "productId": "PDF-AARAN",
+      "image": "/catalog/moodboard-1-pdf/aaran.png",
+      "includedInRequest": true
+    },
+    {
+      "productId": "PDF-SINGLE-DESK",
+      "image": "/catalog/moodboard-1-pdf/single-desk.png",
+      "includedInRequest": true
+    },
+    {
+      "productId": "PDF-DESK-POWER",
+      "image": "/catalog/moodboard-1-pdf/desk-power.png",
+      "includedInRequest": true
+    },
+    {
+      "productId": "PDF-MONITOR-ARM",
+      "image": "/catalog/moodboard-1-pdf/monitor-arm.png",
+      "includedInRequest": true
+    },
+    {
+      "productId": "PDF-SKELF-2400",
+      "image": "/catalog/moodboard-1-pdf/skelf-2400.png",
+      "includedInRequest": true
+    },
+    {
+      "productId": "PDF-HERMAN-DINING",
+      "image": "/catalog/moodboard-1-pdf/herman-dining.png",
+      "includedInRequest": true
+    },
+    {
+      "productId": "PDF-BEE-SEAT",
+      "image": "/catalog/moodboard-1-pdf/bee-seat.png",
+      "includedInRequest": true
+    },
+    {
+      "productId": "PDF-BEE-TABLE",
+      "image": "/catalog/moodboard-1-pdf/bee-table.png",
+      "includedInRequest": true
+    },
+    {
+      "productId": "PDF-HOT-DESK",
+      "image": "/catalog/moodboard-1-pdf/hot-desk.png",
+      "includedInRequest": true
+    },
+    {
+      "productId": "PDF-BENCH-4",
+      "image": "/catalog/moodboard-1-pdf/bench-4.png",
+      "includedInRequest": true
+    },
+    {
+      "productId": "PDF-SCREEN",
+      "image": "/catalog/moodboard-1-pdf/screen.png",
+      "includedInRequest": true
+    }
+  ],
+  "error": null,
+  "fidelity": {
+    "status": "unverified",
+    "exactGeometryGuaranteed": false,
+    "openingScheduleValidated": false,
+    "dimensionConflicts": [
+      "Room IDs are provisional spatial matches only. Source Copa overlaps the current executive office, and Depósito overlaps the current phone booth. Preserve registered functions and furniture; do not rename or repurpose rooms based on these labels.",
+      "Outer labels 24m x 14m yield 336m², differing from the declared 243.76m². Do not force a globally consistent metric model or silently correct either annotation.",
+      "Reunião 01 labels 3.20m x 2.90m yield 9.28m², differing from its listed 9.24m². Preserve both as source annotations."
+    ]
+  },
+  "dimensionConflicts": [
+    "Room IDs are provisional spatial matches only. Source Copa overlaps the current executive office, and Depósito overlaps the current phone booth. Preserve registered functions and furniture; do not rename or repurpose rooms based on these labels.",
+    "Outer labels 24m x 14m yield 336m², differing from the declared 243.76m². Do not force a globally consistent metric model or silently correct either annotation.",
+    "Reunião 01 labels 3.20m x 2.90m yield 9.28m², differing from its listed 9.24m². Preserve both as source annotations."
+  ],
+  "missingCeilingDetails": "Raft details refer to drawings 361–367; M&E specifications are not supplied."
+}
